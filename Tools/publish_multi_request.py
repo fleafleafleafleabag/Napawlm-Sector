@@ -15,7 +15,7 @@ RELEASE_DIR = "release"
 # CONFIGURATION PARAMETERS
 # Forks should change these to publish to their own infrastructure.
 #
-ROBUST_CDN_URL = "https://robustcdn.napawlm.kdx.dedyn.io/"
+ROBUST_CDN_URL = "https://robustcdn.intranet.kdx.dedyn.io/"
 FORK_ID = "napawlm"
 
 def main():
