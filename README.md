@@ -1,10 +1,10 @@
 
 
-Nethermore Sector is a fork of [Monolith](https://github.com/new-frontiers-14/frontier-station-14) that runs on the [Robust Toolbox](https://github.com/space-wizards/RobustToolbox) engine written in C#.
+Napawlm Sector is a fork of [Monolith](https://github.com/new-frontiers-14/frontier-station-14) that runs on the [Robust Toolbox](https://github.com/space-wizards/RobustToolbox) engine written in C#.
 
-This is the primary repo for the Nethermore Sector.
+This is the primary repo for the Napawlm Sector.
 
-If you want to host or create content for Nethermore Sector, this is the repo you need. It contains both RobustToolbox and the content pack for development of new content packs.
+If you want to host or create content for Napawlm Sector, this is the repo you need. It contains both RobustToolbox and the content pack for development of new content packs.
 
 ## Links
 
