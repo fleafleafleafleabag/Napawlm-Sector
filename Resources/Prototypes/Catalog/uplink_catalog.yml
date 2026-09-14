@@ -234,10 +234,13 @@
   name: uplink-flash-grenade-name
   description: uplink-flash-grenade-desc
   productEntity: GrenadeFlashBang
-  cost:
-    Telecrystal: 5 # Mono
+#  cost: # Pawlm
+#    Telecrystal: 5 # Pawlm
   categories:
   - UplinkExplosives
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 5
 
 - type: listing
   id: UplinkSmokeGrenade
@@ -271,7 +274,7 @@
   discountDownTo:
     Telecrystal: 15 # Mono
   cost:
-    Telecrystal: 30 # Mono
+    Telecrystal: 25 # Pawlm
   categories:
     - UplinkExplosives
 
@@ -284,7 +287,7 @@
   discountDownTo:
     Telecrystal: 5 # Mono
   cost:
-    Telecrystal: 15 # Mono
+    Telecrystal: 10 # Pawlm
   categories:
     - UplinkExplosives
 
@@ -326,9 +329,9 @@
   productEntity: ClothingBeltMilitaryWebbingGrenadeFilled
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 30 # Mono
+    Telecrystal: 25 # Mono
   cost:
-    Telecrystal: 60 # Mono
+    Telecrystal: 50 # Pawlm
   categories:
   - UplinkExplosives
 #  conditions: # Mono - Hyperwar
@@ -371,9 +374,9 @@
   productEntity: PenExplodingBox
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 10 # Mono
+    Telecrystal: 5 # Pawlm
   cost:
-    Telecrystal: 20 # Mono
+    Telecrystal: 10 # Pawlm
   categories:
   - UplinkExplosives
 
@@ -383,7 +386,7 @@
   description: uplink-exploding-syndicate-bomb-desc
   productEntity: SyndicateBomb
   cost:
-    Telecrystal: 75 # Mono # 11->15 Mono
+    Telecrystal: 45 # Pawlm
   categories:
     - UplinkExplosives
 #  restockTime: 1800
@@ -417,7 +420,7 @@
   discountDownTo:
     Telecrystal: 25 # Mono
   cost:
-    Telecrystal: 40 # Mono
+    Telecrystal: 35 # Mono
   categories:
   - UplinkExplosives
 
@@ -560,9 +563,9 @@
   productEntity: HypopenBox
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 20 # Mono
+    Telecrystal: 10 # Pawlm
   cost:
-    Telecrystal: 30 # Mono
+    Telecrystal: 20 # Pawlm
   categories:
   - UplinkChemicals
 
@@ -621,9 +624,9 @@
   productEntity: NocturineChemistryBottle
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 15 # Mono
+    Telecrystal: 5 # Pawlm
   cost:
-    Telecrystal: 30 # Mono
+    Telecrystal: 15 # Pawlm
   categories:
   - UplinkChemicals
 
@@ -634,9 +637,9 @@
   productEntity: MedkitCombatFilled
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 10 # Mono
+    Telecrystal: 10 # Pawlm
   cost:
-    Telecrystal: 25 # Mono
+    Telecrystal: 20 # Pawlm
   categories:
   - UplinkChemicals
 
@@ -647,9 +650,9 @@
   productEntity: CombatMedipen
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 10 # Mono
+    Telecrystal: 5 # Pawlm
   cost:
-    Telecrystal: 20 # Mono
+    Telecrystal: 10 # Pawlm
   categories:
   - UplinkChemicals
 
@@ -660,9 +663,9 @@
   productEntity: Stimpack
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 10 # Mono
+    Telecrystal: 5 # Mono
   cost:
-    Telecrystal: 20 # Mono
+    Telecrystal: 10 # Mono
   categories:
   - UplinkChemicals
 
@@ -673,9 +676,9 @@
   productEntity: StimkitFilled
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 40 # Mono
+    Telecrystal: 25 # Pawlm
   cost:
-    Telecrystal: 60 # Mono
+    Telecrystal: 35 # Pawlm
   categories:
   - UplinkChemicals
 
@@ -684,13 +687,16 @@
   name: uplink-cigarettes-name
   description: uplink-cigarettes-desc
   productEntity: CigPackSyndicate
-  discountCategory: rareDiscounts
-  discountDownTo:
-    Telecrystal: 5 # Mono
-  cost:
-    Telecrystal: 10 # Mono
+#  discountCategory: rareDiscounts
+#  discountDownTo:
+#    Telecrystal: 5 # Mono
+#  cost:
+#    Telecrystal: 10 # Mono
   categories:
   - UplinkChemicals
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 3
 
 - type: listing
   id: UplinkMedsBundle
@@ -701,7 +707,7 @@
   discountDownTo:
     Telecrystal: 80 # Mono
   cost:
-    Telecrystal: 120 # Mono
+    Telecrystal: 100 # Pawlm
   categories:
   - UplinkChemicals
   conditions:
@@ -727,7 +733,7 @@
   discountDownTo:
     Telecrystal: 5 # Mono
   cost:
-    Telecrystal: 15 # Mono
+    Telecrystal: 10 # Pawlm
   categories:
   - UplinkDeception
 
@@ -738,9 +744,9 @@
   productEntity: StealthBox
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 10 # Mono
+    Telecrystal: 5 # Pawlm
   cost:
-    Telecrystal: 25 # Mono
+    Telecrystal: 10 # Pawlm
   categories:
   - UplinkDeception
 
@@ -751,9 +757,9 @@
   productEntity: ChameleonProjector
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 20 # Mono
+    Telecrystal: 15 # Pawlm
   cost:
-    Telecrystal: 35 # Mono
+    Telecrystal: 25 # Pawlm
   categories:
   - UplinkDeception
 
@@ -771,17 +777,16 @@
   categories:
   - UplinkDeception
 
-# Mono
-#- type: listing
-#  id: UplinkBinaryTranslatorKey
-#  name: uplink-binary-translator-key-name
-#  description: uplink-binary-translator-key-desc
-#  icon: { sprite: /Textures/Objects/Devices/encryption_keys.rsi, state: ai_label }
-#  productEntity: EncryptionKeyBinarySyndicate
-#  cost:
-#    Telecrystal: 5 # Mono
-#  categories:
-#  - UplinkDeception
+- type: listing
+  id: UplinkBinaryTranslatorKey
+  name: uplink-binary-translator-key-name
+  description: uplink-binary-translator-key-desc
+  icon: { sprite: /Textures/Objects/Devices/encryption_keys.rsi, state: ai_label }
+  productEntity: EncryptionKeyBinarySyndicate
+  cost:
+    Telecrystal: 5 # Mono
+  categories:
+  - UplinkDeception
 
 - type: listing
   id: UplinkCyberpen
@@ -798,8 +803,8 @@
   name: uplink-decoy-disk-name
   description: uplink-decoy-disk-desc
   productEntity: NukeDiskFake
-  cost:
-    Telecrystal: 5 # Mono
+#  cost:
+#    Telecrystal: 5 # Pawlm
   categories:
   - UplinkDeception
 
@@ -810,9 +815,9 @@
   productEntity: LanternFlash
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 5 # Mono
+    Telecrystal: 1 # Pawlm
   cost:
-    Telecrystal: 10 # Mono
+    Telecrystal: 5 # Pawlm
   categories:
   - UplinkDeception
 
@@ -846,12 +851,15 @@
   icon: { sprite: /Textures/Objects/Tools/Decoys/operative_decoy.rsi, state: folded }
   productEntity: ClothingBackpackDuffelSyndicateDecoyKitFilled
   discountCategory: usualDiscounts
-  discountDownTo:
-    Telecrystal: 15 # Mono
-  cost:
-    Telecrystal: 30 # Mono
+#  discountDownTo:
+#    Telecrystal: 15 # Mono
+#  cost:
+#    Telecrystal: 30 # Mono
   categories:
   - UplinkDeception
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 5
 
 - type: listing # Frontier - Mono Edit - Readds Explosives
   id: UplinkSyndicateBombFake
@@ -860,9 +868,9 @@
   productEntity: SyndicateBombFake
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 5 # Mono
+    Telecrystal: 1 # Pawlm
   cost:
-    Telecrystal: 20 # Mono
+    Telecrystal: 2 # Pawlm
   categories:
   - UplinkDeception
 
@@ -890,7 +898,7 @@
   discountDownTo:
     Telecrystal: 15 # Mono
   cost:
-    Telecrystal: 25 # Mono
+    Telecrystal: 20 # Pawlm
   categories:
   - UplinkDisruption
 
@@ -939,8 +947,8 @@
   name: uplink-soap-name
   description: uplink-soap-desc
   productEntity: SoapSyndie
-  cost:
-    Telecrystal: 5 # Mono
+#  cost:
+#    Telecrystal: 5 # Mono
   categories:
   - UplinkDisruption
 
@@ -951,9 +959,9 @@
   productEntity: SlipocalypseClusterSoap
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 5 # Mono
+    Telecrystal: 1 # Pawlm
   cost:
-    Telecrystal: 10 # Mono
+    Telecrystal: 2 # Pawlm
   categories:
   - UplinkDisruption
 
@@ -977,9 +985,9 @@
   productEntity: SyndicateJawsOfLife
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 5 # Mono
+    Telecrystal: 1 # Pawlm
   cost:
-    Telecrystal: 10 # Mono
+    Telecrystal: 5 # Pawlm
   categories:
   - UplinkDisruption
 
@@ -996,23 +1004,23 @@
   categories:
   - UplinkDisruption
 
-# - type: listing # Frontier
-  # id: UplinkPowerSink
-  # name: uplink-power-sink-name
-  # description: uplink-power-sink-desc
-  # productEntity: PowerSink
-  # discountCategory: usualDiscounts
-  # discountDownTo:
-    # Telecrystal: 20 # Mono
-  # cost:
-    # Telecrystal: 40 # Mono
-  # categories:
-  # - UplinkDisruption
-  # conditions:
-  # - !type:BuyerWhitelistCondition
-      # blacklist:
-        # components:
-          # - SurplusBundle
+ - type: listing # Pawlm, added back because they're not the best tools
+   id: UplinkPowerSink
+   name: uplink-power-sink-name
+   description: uplink-power-sink-desc
+   productEntity: PowerSink
+   discountCategory: usualDiscounts
+   discountDownTo:
+     Telecrystal: 20 # Mono
+   cost:
+     Telecrystal: 40 # Mono
+   categories:
+   - UplinkDisruption
+   conditions:
+   - !type:BuyerWhitelistCondition
+       blacklist:
+         components:
+           - SurplusBundle
 
 - type: listing # Frontier - Mono Edit - Readds Warcrimes.
   id: UplinkAntimovCircuitBoard
@@ -1021,9 +1029,9 @@
   productEntity: AntimovCircuitBoard
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 50 # Mono
+    Telecrystal: 25 # Pawlm
   cost:
-    Telecrystal: 70 # Mono
+    Telecrystal: 45 # Pawlm
   categories:
   - UplinkDisruption
   conditions:
@@ -1039,16 +1047,16 @@
   productEntity: AntimovCircuitBoard
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 40 # Mono
+    Telecrystal: 25 # Mono
   cost:
-    Telecrystal: 60 # Mono # Mono - Cheapened, extremely situational
+    Telecrystal: 45 # Pawlm, cheapened even  further because what the FUCK are you gonna do with an AI lawset thats gonna do ANYTHING
   categories:
   - UplinkDisruption
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - NukeOpsUplink
+  conditions: # Pawlm
+  - !type:StoreWhitelistCondition # Pawlm
+    whitelist: # Pawlm
+      tags: # Pawlm
+      - NukeOpsUplink # Pawlm
 
 - type: listing
   id: UplinkSurplusBundle
@@ -1121,16 +1129,16 @@
   productEntity: BoxHoloparasite
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 40 # Mono
+    Telecrystal: 40 # Pawlm
   cost:
-    Telecrystal: 70 # Mono
+    Telecrystal: 60 # Pawlm
   categories:
   - UplinkAllies
-  conditions:
-  - !type:StoreWhitelistCondition
-    blacklist:
-      tags:
-      - NukeOpsUplink
+#  conditions:
+#  - !type:StoreWhitelistCondition
+#    blacklist:
+#      tags:
+#      - NukeOpsUplink
 
 # - type: listing # Frontier
   # id: UplinkReinforcementRadioSyndicate
@@ -1176,14 +1184,16 @@
   productEntity: ReinforcementRadioSyndicateCyborgAssault
   icon: { sprite: Objects/Devices/communication.rsi, state: old-radio-borg-assault }
   cost:
-    Telecrystal: 30 # 65->35 Mono
+    Telecrystal: 60 # Pawlm 30 to 60
   categories:
     - UplinkAllies
   conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - NukeOpsUplink
+  - !type:ListingLimitedStockCondition
+    stock: 1 # because theyre crazy, # Pawlm
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - NukeOpsUplink
 
 # - type: listing # Frontier
   # id: UplinkReinforcementRadioSyndicateAncestor
@@ -1230,9 +1240,9 @@
   productEntity: DehydratedSpaceCarp
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 5 # Mono
+    Telecrystal: 1 # Pawlm
   cost:
-    Telecrystal: 10 # Mono
+    Telecrystal: 5 # Pawlm
   categories:
   - UplinkAllies
 #  conditions: - Mono, re-added to nukies
@@ -1261,13 +1271,13 @@
   description: uplink-syndicate-pai-desc
   icon: { sprite: /Textures/Objects/Fun/pai.rsi, state: syndicate-icon-pai-off }
   productEntity: SyndicatePersonalAI
-  cost:
-    Telecrystal: 5 # Mono
+#  cost: # Pawlm
+#    Telecrystal: 5 # Pawlm
   categories:
     - UplinkAllies
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 3 # Pawlm
 
 # Implants
 
@@ -1279,9 +1289,9 @@
   productEntity: StorageImplanter
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 20 # Mono
+    Telecrystal: 10 # Mono
   cost:
-    Telecrystal: 40 # Mono
+    Telecrystal: 20 # Mono
   categories:
     - UplinkImplants
   conditions:
@@ -1326,9 +1336,9 @@
   productEntity: DnaScramblerImplanter
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 10 # Mono
+    Telecrystal: 5 # Pawlm
   cost:
-    Telecrystal: 25 # Mono
+    Telecrystal: 10 # Pawlm
   categories:
     - UplinkImplants
 
@@ -1407,7 +1417,7 @@
   icon: { sprite: /Textures/Objects/Magic/magicactions.rsi, state: gib }
   productEntity: DeathAcidifierImplanter
   cost:
-    Telecrystal: 20 # Mono
+    Telecrystal: 5 # Pawlm
   categories:
     - UplinkImplants
   # conditions:
@@ -1424,9 +1434,9 @@
   productEntity: UplinkImplanter
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 25 # Mono # Mono 1->5
+    Telecrystal: 15 # Pawlm
   cost:
-    Telecrystal: 50 # Mono # Mono 2->10
+    Telecrystal: 25 # Pawlm
   categories:
   - UplinkImplants
   conditions:
@@ -1461,9 +1471,9 @@
   icon: { sprite: Interface/Actions/actions_fakemindshield.rsi, state: icon-on }
   productEntity: FakeMindShieldImplanter
   discountDownTo:
-    Telecrystal: 10 # Mono
+    Telecrystal: 5 # Pawlm
   cost:
-    Telecrystal: 20 # Mono
+    Telecrystal: 10 # Pawlm
   categories:
   - UplinkImplants
 
@@ -1477,9 +1487,9 @@
   productEntity: JetpackBlackFilled
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 5 # Mono
+    Telecrystal: 1 # Mono
   cost:
-    Telecrystal: 10 # Mono
+    Telecrystal: 5 # Pawlm
   categories:
   - UplinkWearables
 
@@ -1689,7 +1699,7 @@
   description: uplink-clothing-conducting-gloves-desc
   productEntity: ClothingHandsGlovesConducting
   cost:
-    Telecrystal: 10 # Mono
+    Telecrystal: 5 # Pawlm
   categories:
   - UplinkWearables
 
@@ -1698,8 +1708,8 @@
   name: uplink-backpack-syndicate-name
   description: uplink-backpack-syndicate-desc
   productEntity: ClothingBackpackSyndicate
-  cost:
-    Telecrystal: 10 # Mono
+#  cost: # Pawlm
+#    Telecrystal: 10 # Pawlm
   categories:
     - UplinkWearables
 
@@ -1710,18 +1720,21 @@
   name: uplink-barber-scissors-name
   description: uplink-barber-scissors-desc
   productEntity: BarberScissors
-  cost:
-    Telecrystal: 5 # Mono
+#  cost: # Pawlm
+#    Telecrystal: 5 # Pawlm
   categories:
   - UplinkPointless
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2
 
 - type: listing # Frontier - Mono Readd.
   id: UplinkSnackBox
   name: uplink-snack-box-name
   description: uplink-snack-box-desc
   productEntity: HappyHonkNukieSnacks
-  cost:
-    Telecrystal: 5 # Mono
+#  cost: # Pawlm
+#    Telecrystal: 5 # Pawlm
   categories:
   - UplinkPointless
 
@@ -1731,12 +1744,15 @@
   description: uplink-revolver-cap-gun-desc
   productEntity: RevolverCapGun
   discountCategory: rareDiscounts
-  discountDownTo:
-    Telecrystal: 10 # Mono
-  cost:
-    Telecrystal: 20 # Mono
+#  discountDownTo: # Pawlm
+#    Telecrystal: 10 # Pawlm
+#  cost:
+#    Telecrystal: 20 # Pawlm
   categories:
   - UplinkPointless
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 5
 
 - type: listing
   id: UplinkSyndicateStamp
@@ -1744,30 +1760,36 @@
   description: uplink-syndicate-stamp-desc
   productEntity: RubberStampSyndicate
   discountCategory: rareDiscounts
-  discountDownTo:
-    Telecrystal: 5 # Mono
-  cost:
-    Telecrystal: 10 # Mono
+#  discountDownTo: # Pawlm
+#    Telecrystal: 5 # Mono
+#  cost:
+#    Telecrystal: 10 # Mono
   categories:
   - UplinkPointless
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: UplinkCatEars
   name: uplink-cat-ears-name
   description: uplink-cat-ears-desc
   productEntity: ClothingHeadHatCatEars
-  cost:
-    Telecrystal: 20 # Mono
+#  cost: # Pawlm
+#    Telecrystal: 20 # Mono
   categories:
   - UplinkPointless
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 3
 
 - type: listing
   id: UplinkOutlawHat
   name: uplink-outlaw-hat-name
   description: uplink-outlaw-hat-desc
   productEntity: ClothingHeadHatOutlawHat
-  cost:
-    Telecrystal: 5 # Mono
+#  cost: # Pawlm
+#    Telecrystal: 5 # Mono
   categories:
   - UplinkPointless
 
@@ -1776,8 +1798,8 @@
   name: uplink-outlaw-glasses-name
   description: uplink-outlaw-glasses-desc
   productEntity: ClothingEyesGlassesOutlawGlasses
-  cost:
-    Telecrystal: 5 # Mono
+#  cost: # Pawlm
+#    Telecrystal: 5 # Mono
   categories:
   - UplinkPointless
 
@@ -1786,8 +1808,8 @@
   name: uplink-costume-pyjama-name
   description: uplink-costume-pyjama-desc
   productEntity: ClothingBackpackDuffelSyndicatePyjamaBundle
-  cost:
-    Telecrystal: 20 # Mono
+#  cost: # Pawlm
+#    Telecrystal: 20 # Mono
   categories:
   - UplinkPointless
 
@@ -1796,8 +1818,8 @@
   name: uplink-costume-clown-name
   description: uplink-costume-clown-desc
   productEntity: ClothingBackpackDuffelSyndicateCostumeClown
-  cost:
-    Telecrystal: 5 # Mono # 2->1
+#  cost: # Pawlm
+#    Telecrystal: 5 # Mono # 2->1
   categories:
   - UplinkPointless
 
@@ -1816,8 +1838,8 @@
   name: uplink-operative-suit-name
   description: uplink-operative-suit-desc
   productEntity: ClothingUniformJumpsuitOperative
-  cost:
-    Telecrystal: 5 # Mono
+#  cost: # Pawlm
+#    Telecrystal: 5 # Mono
   categories:
   - UplinkPointless
 
@@ -1826,8 +1848,8 @@
   name: uplink-operative-skirt-name
   description: uplink-operative-skirt-desc
   productEntity: ClothingUniformJumpskirtOperative
-  cost:
-    Telecrystal: 5 # Mono
+#  cost: # Pawlm
+#    Telecrystal: 5 # Pawlm
   categories:
   - UplinkPointless
 
@@ -1836,18 +1858,21 @@
   name: uplink-balloon-name
   description: uplink-balloon-desc
   productEntity: BalloonSyn
-  cost:
-    Telecrystal: 100 # Mono
+#  cost: # Pawlm
+#    Telecrystal: 100 # Pawlm
   categories:
   - UplinkPointless
+  conditions: # Pawlm
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: UplinkScarfSyndieRed
   name: uplink-scarf-syndie-red-name
   description: uplink-scarf-syndie-red-desc
   productEntity: ClothingNeckScarfStripedSyndieRed
-  cost:
-    Telecrystal: 5 # Mono
+#  cost: # Pawlm
+#    Telecrystal: 5 # Pawlm
   categories:
   - UplinkPointless
 
@@ -1856,8 +1881,8 @@
   name: uplink-scarf-syndie-green-name
   description: uplink-scarf-syndie-green-desc
   productEntity: ClothingNeckScarfStripedSyndieGreen
-  cost:
-    Telecrystal: 5 # Mono
+#  cost: # Pawlm
+#    Telecrystal: 5 # Pawlm
   categories:
     - UplinkPointless
 
@@ -1868,9 +1893,6 @@
   productEntity: SyndicateBusinessCard
   categories:
     - UplinkPointless
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 3
 
 # Job Specific
 

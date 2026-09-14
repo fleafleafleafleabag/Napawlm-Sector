@@ -15,7 +15,7 @@
   description: uplink-spaceblade-syndicate-desc
   productEntity: SpaceBladeContra
   icon: { sprite: _NF/Objects/Fun/spaceblade.rsi, state: contraband }
-  cost:
-    Telecrystal: 5
+#  cost:
+#  Telecrystal: 0 # Pawlm, 0 because no one is willingly wasting tc on this
   categories:
     - UplinkPointless

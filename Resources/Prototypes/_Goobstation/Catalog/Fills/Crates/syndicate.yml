@@ -4,7 +4,7 @@
   suffix: Filled
   parent: CrateSyndicate
   name: Cybersun gygax bundle
-  description: Contains a set of Cybersan light armored mechs.
+  description: Contains the middle child of Cybersun, glory to the Syndicate
   components:
   - type: StorageFill
     contents:
@@ -19,7 +19,7 @@
   suffix: Filled
   parent: CrateSyndicate
   name: Cybersun mauler bundle
-  description: Contains a set of Cybersan heavy armored mechs.
+  description: Contains the spoiled child of Cybersun, glory to the Syndicate
   components:
   - type: StorageFill
     contents:

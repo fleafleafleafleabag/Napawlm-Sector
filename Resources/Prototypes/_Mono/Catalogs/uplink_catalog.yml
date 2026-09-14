@@ -74,7 +74,7 @@
   description: uplink-letoferol-desc
   productEntity: SyringeLetoferol
   cost:
-    Telecrystal: 500
+    Telecrystal: 250 # 500 to 250, Pawlm
   categories:
   - UplinkDeception
 

@@ -35,11 +35,13 @@
 
 - type: entity
   id: LeftHandTajaran
+  description: The missing hand-paw of whoever didnt conform to the compliance procedures
   name: left tajaran hand
   parent: [PartTajaran, BaseLeftHand]
 
 - type: entity
   id: RightHandTajaran
+  description: The missing hand-paw of whoever didnt conform to the compliance procedures
   name: right tajaran hand
   parent: [PartTajaran, BaseRightHand]
 

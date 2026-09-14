@@ -4,6 +4,6 @@
   description: uplink-syndicate-deck-desc
   productEntity: CardBoxSyndicate
   cost:
-    Telecrystal: 5 # Mono: 4>5 frontier revert
+    Telecrystal: 0 # Pawlm, free because no one wastes TC willingly on this
   categories:
   - UplinkPointless
