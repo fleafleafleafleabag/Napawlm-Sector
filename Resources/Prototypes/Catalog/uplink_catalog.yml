@@ -1012,7 +1012,7 @@
   discountCategory: usualDiscounts
   discountDownTo:
     Telecrystal: 20 # Mono
-  cost:
+   cost:
     Telecrystal: 40 # Mono
   categories:
   - UplinkDisruption
