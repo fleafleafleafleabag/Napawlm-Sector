@@ -1,0 +1,41 @@
+- type: entity
+  parent: BaseNFFlatpack
+  id: AutosurgeonSandevistanSyndicateFlatpack
+  name: Syndicate autosurgeon (sandevistan) flatpack
+  description: A flatpack used for constructing a Syndicate autosurgeon.
+  components:
+  - type: Flatpack
+    entity: AutosurgeonSandevistan
+  - type: StaticPrice
+    price: 50000
+  - type: Sprite
+    layers:
+    - state: medical_lathe
+
+- type: entity
+  parent: BaseNFFlatpack
+  id: AutosurgeonLeftMantisBladeSyndicateFlatpack
+  name: Syndicate autosurgeon (left mantis blade) flatpack
+  description: A flatpack used for constructing a Syndicate autosurgeon.
+  components:
+  - type: Flatpack
+    entity: AutosurgeonLeftMantisBlade
+  - type: StaticPrice
+    price: 50000
+  - type: Sprite
+    layers:
+    - state: medical_lathe
+
+- type: entity
+  parent: BaseNFFlatpack
+  id: AutosurgeonRightMantisBladeSyndicateFlatpack
+  name: Syndicate autosurgeon (right mantis blade) flatpack
+  description: A flatpack used for constructing a Syndicate autosurgeon.
+  components:
+  - type: Flatpack
+    entity: AutosurgeonRightMantisBlade
+  - type: StaticPrice
+    price: 50000
+  - type: Sprite
+    layers:
+    - state: medical_lathe

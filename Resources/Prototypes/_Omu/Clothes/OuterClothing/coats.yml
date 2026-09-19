@@ -1,0 +1,21 @@
+- type: entity
+  parent: ClothingOuterDavidsJacket
+  id: ClothingOuterDavidsJacketValid
+  name: edgerunner jacket
+  description: You're right on the edge. Show 'em you got this.
+  components:
+  - type: Clothing
+    clothingVisuals:
+      outerClothing:
+      - state: valid-equipped-OUTERCLOTHING
+      outerClothing-vox:
+      - state: valid-equipped-OUTERCLOTHING-vox
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 1.5
+        Slash: 1.2
+        Piercing: 0.30
+        Heat: 0.8
+  - type: StaminaDamageResistance
+    damageCoefficient: 0.3
