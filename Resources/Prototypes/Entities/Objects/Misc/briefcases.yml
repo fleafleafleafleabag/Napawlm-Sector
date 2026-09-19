@@ -29,9 +29,35 @@
     sprite: _NF/Objects/Storage/Briefcases/briefcase_brown.rsi # Frontier: _NF prefix
 
 - type: entity
-  parent: BriefcaseBrown
+  parent: BriefcaseBase
   id: BriefcaseSyndie
-  suffix: Syndicate, Empty
+  name: inconspicuous briefcase
+  description: What are you lookin' at, huh?
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Storage/Briefcases/syndicate_briefcase.rsi # Frontier: _NF prefix
+    state: icon
+  - type: Item
+    sprite: _Starlight/Objects/Storage/Briefcases/syndicate_briefcase.rsi # Frontier: _NF prefix
+
+
+- type: entity
+  parent: BriefcaseSyndie
+  id: BriefcaseSyndiePaw # Pawlm
+  name: syndicate briefcase
+  description: Useful for carrying your contraband items, also obscenely effective at combat.
   components:
   - type: Item
-    size: Huge
+    size: Ginormous
+  - type: Storage
+    maxItemSize: Ginormous
+    grid:
+    - 0,0,8,5
+  - type: Tag
+    tags:
+    - Briefcase
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 10
+        Slash: 10

@@ -999,6 +999,8 @@
   name: pirate captain's hardsuit
   description: An ancient armored hardsuit, perfect for defending against space scurvy and toolbox-wielding scallywags.
   components:
+  - type: Item
+    size: Huge
   - type: Sprite
     sprite: Clothing/OuterClothing/Hardsuits/piratecaptain.rsi
   - type: Clothing
@@ -1011,14 +1013,14 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.6
-        Slash: 0.7
-        Piercing: 0.75
-        Heat: 0.4
+        Blunt: 0.4
+        Slash: 0.4
+        Piercing: 0.5
+        Heat: 1.3
         Caustic: 0.75
   - type: ClothingSpeedModifier
-    walkModifier: 0.8
-    sprintModifier: 0.8
+    walkModifier: 0.9
+    sprintModifier: 0.9
   - type: HeldSpeedModifier
   - type: ToggleableClothing # Goobstation - Modsuits change - Mono - this is a solution for helmet attachment/cover to not fit on hardsuits
     requiredSlot: outerclothing

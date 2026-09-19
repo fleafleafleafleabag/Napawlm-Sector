@@ -59,7 +59,7 @@ entities:
   - uid: 1
     components:
     - type: MetaData
-      name: Sol Defense Force HQ
+      name: TSFMC Flagship Halcyon
     - type: Transform
       pos: -5.6500416,-0.06740886
       parent: invalid

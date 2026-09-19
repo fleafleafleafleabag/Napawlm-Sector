@@ -16,7 +16,7 @@
 
 - type: listing
   id: UplinkRevolverPython
-  # name: uplink-revolver-python-name
+  name: uplink-revolver-python-name
   description: uplink-revolver-python-desc
   productEntity: WeaponRevolverPythonAP
   discountCategory: rareDiscounts
@@ -124,6 +124,16 @@
       whitelist: # Mono - Whitelisted now
         tags:
           - NukeOpsUplink
+
+- type: listing
+  id: UplinkFireFireAxe
+  name: uplink-fire-axe-flaming-name
+  description: uplink-fire-axe-flaming-desc
+  productEntity: FireAxeFlaming
+  cost:
+    Telecrystal: 40
+  categories:
+  - UplinkWeaponry
 
 - type: listing
   id: UplinkEshield

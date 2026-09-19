@@ -44,6 +44,9 @@
       - DeathAcidifierImplant
       - DeathRattleImplant
       - MindShieldImplant
+      - MindcontrolImplant
+      - NutrimentPumpImplant
+      - SmokeImplant
       - MedicalTrackingImplant # Mono
       - RadioImplantFreelance # Mono
       - TrackingImplant # Moved Down, This is the TSFMC Tracker - Mono

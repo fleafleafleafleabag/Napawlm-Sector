@@ -28,3 +28,481 @@
       - id: DoubleEmergencyNitrogenTankFilled
       - id: ToolboxSyndicateFilled
       - id: PlushieNuke
+
+- type: entity
+  id: CrateSyndicateBulkMosin
+  suffix: Filled
+  parent: CrateSyndicate
+  name: Syndicate bulk rifle crate
+  description: Just use more rifles, comrade.
+  components:
+    - type: StorageFill
+      contents:
+        - id: WeaponSniperMosin
+          amount: 10
+        - id: ClothingHeadHatUshanka
+          amount: 5
+        - id: DrinkVodkaBottleFull
+          amount: 3
+
+- type: entityTable
+  id: RandomFuckingBundleSelector
+  table: !type:GroupSelector
+    children:
+    - !type:GroupSelector
+      weight: 5.5
+      children: #lawyer set
+      - id: BriefcaseLawyerSet
+    - !type:GroupSelector
+      weight: 5.5
+      children: # doorkicker set
+      - id: BriefcaseDoorKickerSet
+    - !type:GroupSelector
+      weight: 5.5
+      children: # no russian set
+      - id: BriefcaseNoRussianSet
+    - !type:GroupSelector
+      weight: 5.5
+      children: # pirate captain set
+      - id: BriefcasePirateCaptainSet
+    - !type:GroupSelector
+      weight: 5.5
+      children: # tunnel clown set
+      - id: BriefcaseTunnelClownSet
+    - !type:GroupSelector
+      weight: 5.5
+      children: # spy set
+      - id: BriefcaseSpySet
+    - !type:GroupSelector
+      weight: 5.5
+      children: # hitman set
+      - id: BriefcaseHitmanSet
+    - !type:GroupSelector
+      weight: 5.5
+      children: # hacker (reworked) set
+      - id: BriefcaseHackerSet
+    - !type:GroupSelector
+      weight: 5.5
+      children: # sith set
+      - id: BriefcaseSithSet
+    - !type:GroupSelector
+      weight: 5.5
+      children: # grenadier set
+      - id: BriefcaseGrenadierSet
+    - !type:GroupSelector
+      weight: 5.5
+      children: # flukie set
+      - id: BriefcaseFlukieSet
+    - !type:GroupSelector
+      weight: 5.5
+      children: # friendship set
+      - id: BriefcaseFriendshipSet
+    - !type:GroupSelector
+      weight: 5.5
+      children: # pokemon set
+      - id: BriefcasePokemonSet
+    - !type:GroupSelector
+      weight: 5.5
+      children: # western set
+      - id: BriefcaseWesternSet
+    - !type:GroupSelector
+      weight: 5.5
+      children: # pneumatic set
+      - id: BriefcasePneumaticSet
+    - !type:GroupSelector
+      weight: 5.5
+      children: # ninja set
+      - id: BriefcaseNinjaSet
+    - !type:GroupSelector
+      weight: 5.5
+      children: # sketchy doctor set
+      - id: BriefcaseSketchyDoctorSet
+
+- type: entity
+  parent: CrateSyndicate
+  id: CrateSyndicateUndetermined # a crate, looks like one # Omuport Pawlm
+  name: undetermined Syndicate bundle crate
+  description: Contains a Syndicate bundle. Testicle your luck.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: RandomFuckingBundleSelector
+        rolls: !type:RangeNumberSelector
+          range: 3, 3
+          # for some reason, the selector here adds 1 to whatever value it generates,
+          # so this is actually 1?
+  - type: StaticPrice
+    price: 69
+
+# hell
+- type: entity
+  id: BriefcaseLawyerSet
+  parent: BriefcaseSyndiePaw
+  suffix: Syndicate, Bundle, Lawyer
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ClothingUniformJumpsuitLawyerRed
+        - id: ClothingNeckLawyerbadge
+        - id: LawyerPDA
+        - id: ClothingEyesGlassesHiddenSecurity
+        - id: EncryptionKeySyndie
+        - id: CyberPen
+        - id: RubberStampLawyer
+        - id: RubberStampSyndicate
+        - id: DnaScramblerImplanter
+        - id: WeaponPistolCobra # Nerfed from trauma to be a low value set
+        - id: Magazine635x40mmCaselessPistol # 1
+        - id: Magazine635x40mmCaselessPistol # 2
+        - id: Magazine635x40mmCaselessPistol # 3
+        - id: Magazine635x40mmCaselessPistol # 4
+        - id: SpaceCashCounterfeit200000
+        - id: SpaceCashCounterfeit200000
+        - id: SpaceCashCounterfeit200000
+        - id: SpaceCashCounterfeit200000
+        - id: SpaceCashCounterfeit200000
+        - id: SpaceCashCounterfeit200000
+
+- type: entity
+  id: BriefcaseDoorKickerSet
+  parent: BriefcaseSyndiePaw
+  suffix: Syndicate, Bundle, DoorKicker
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ClothingUniformJumpsuitOperative
+        - id: ClothingBeltMilitaryWebbing
+        - id: ClothingHeadHelmetSwatSyndicate
+        - id: ClothingOuterVestWeb
+        - id: ClothingEyesThermalVisionGogglesSyndie
+        - id: ClothingHandsGlovesCombat
+        - id: SyndiPDA
+        - id: SyndicateJawsOfLife
+        - id: WeaponShotgunHelepolis
+        - id: AmmoBox12_gaugeOOBuckshot
+        - id: ClothingMaskGasSyndicate
+        - id: EncryptionKeySyndie
+        - id: C4 # 1
+        - id: C4 # 2
+
+- type: entity
+  id: BriefcaseNoRussianSet
+  suffix: Syndicate, Bundle, NoRussian
+  parent: BriefcaseSyndiePaw
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ClothingUniformJumpsuitLawyerBlack
+        - id: ClothingBeltMilitaryWebbing
+        - id: ClothingEyesGlassesHiddenSecurity
+        - id: EncryptionKeySyndie
+        - id: WeaponLightMachineGunL6
+        - id: Magazine762x39mmBox
+
+- type: entity
+  id: BriefcasePirateCaptainSet
+  parent: BriefcaseSyndiePaw
+  suffix: Syndicate, Bundle, PirateCaptain
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: WeaponLauncherPirateCannon
+        - id: ClothingOuterHardsuitPirateCap
+        - id: ClothingHeadHatPirate
+        - id: ClothingNeckCloakPirateCap
+        - id: ClothingShoesBootsMagSyndie
+        - id: CannonBall
+        - id: CannonBall
+        - id: CannonBallGrapeshot
+        - id: CannonBallGrapeshot
+        - id: EnergyCutlass
+        - id: MicroBombImplanter
+        - id: EncryptionKeySyndie
+        - id: CombatMedipen
+
+- type: entity
+  id: BriefcaseTunnelClownSet
+  parent: BriefcaseSyndiePaw
+  suffix: Syndicate, Bundle, TunnelClown
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FireAxeFlaming
+        - id: ClothingOuterVestWeb
+        - id: ClothingEyesNightVisionGogglesSyndie
+        - id: FreedomImplanter
+        - id: MicroBombImplanter
+        - id: SadTromboneImplanter
+        - id: HoloClownInjector
+        - id: BikeHorn
+        - id: EncryptionKeySyndie
+
+- type: entity
+  id: BriefcaseSpySet
+  parent: BriefcaseSyndiePaw
+  suffix: Syndicate, Bundle, Spy
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ClothingBackpackChameleonFill
+        - id: EncryptionKeySyndie
+        - id: ClothingHandsChameleonThief
+        - id: ClothingMaskGasVoiceChameleon
+        - id: AgentIDCard
+        - id: HypopenBox
+        - id: NocturineChemistryBottle
+        - id: CameraBug
+        - id: ChameleonProjector
+        - id: BetrayalKnife
+        - id: SyndicateJawsOfLife
+
+- type: entity
+  id: BriefcaseHitmanSet
+  parent: BriefcaseSyndiePaw
+  suffix: Syndicate, Bundle, Hitman
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: EncryptionKeySyndie
+        - id: WeaponPistolCobra
+        - id: Magazine635x40mmCaselessPistol
+        - id: Magazine635x40mmCaselessPistol
+        - id: Magazine635x40mmCaselessPistol
+        - id: ClothingOuterArmourInvisible
+        - id: ClothingShoesBootsJack
+        - id: CigPackSyndicate
+        - id: MedkitCombatFilled
+        - id: ClothingEyesGlassesSunglasses
+        - id: ClothingUniformJumpsuitDetectiveGrey
+        - id: ClothingHandsGlovesCombat
+
+- type: entity
+  id: BriefcaseHackerSet
+  parent: BriefcaseSyndiePaw
+  suffix: Syndicate, Bundle, Hacker
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: EncryptionKeySyndie
+        - id: AccessBreaker
+        - id: Emag
+        - id: ClothingOuterHardsuitCybersunStealth
+        - id: ClothingMaskGasSyndicate
+        - id: ClothingHandsGlovesCombat
+        - id: DoubleEmergencyOxygenTankFilled
+        - id: DoubleEmergencyNitrogenTankFilled
+        - id: SmokeImplanter
+        - id: RadioJammer
+        - id: ClothingEyesGlassesOutlawGlasses
+
+- type: entity
+  id: BriefcaseSithSet
+  suffix: Syndicate, Bundle, Sith
+  parent: BriefcaseSyndiePaw
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: EncryptionKeySyndie
+        - id: EnergySwordDouble
+        - id: StimkitFilled
+        - id: StimkitFilled
+        - id: ClothingShoesChameleonNoSlips
+        - id: SyringeCaseAltFilled
+
+- type: entity
+  id: BriefcaseGrenadierSet
+  suffix: Syndicate, Bundle, Grenadier
+  parent: BriefcaseSyndiePaw
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ClothingBeltMilitaryWebbingGrenadeFilled
+        - id: ClothingOuterSuitBombSyndie
+        - id: ClothingHeadHelmetBombSuitSyndie
+        - id: EncryptionKeySyndie
+
+- type: entity
+  id: BriefcaseFlukieSet
+  suffix: Syndicate, Bundle, Flukie
+  parent: BriefcaseSyndiePaw
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ClothingOuterHardsuitSyndie
+        - id: ClothingBeltMilitaryWebbing
+        - id: ClothingHeadsetAltSyndicate
+        - id: WeaponSubMachineGunC20r
+        - id: Magazine9x19mmSubMachineGunFMJ
+        - id: Magazine9x19mmSubMachineGunFMJ
+        - id: ClothingEyesThermalVisionGogglesSyndie
+        - id: EnergyShield
+        - id: MicroBombImplanter
+        - id: CombatMedipen
+        - id: CombatMedipen
+
+- type: entity
+  id: BriefcaseFriendshipSet
+  parent: BriefcaseSyndiePaw
+  suffix: Syndicate, Bundle, Friendship
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: MindcontrolImplanter
+        - id: MindcontrolImplanter
+        - id: MindcontrolImplanter
+        - id: MindcontrolImplanter
+        - id: Handcuffs
+        - id: EnergyDaggerBox
+        - id: EnergyDaggerBox
+        - id: EnergyDaggerBox
+        - id: EnergyDaggerBox
+        - id: EncryptionKeySyndie
+        - id: EncryptionKeySyndie
+        - id: EncryptionKeySyndie
+        - id: EncryptionKeySyndie
+        - id: EncryptionKeySyndie
+        - id: CardBoxSyndicate
+        - id: SyndicatePersonalAI
+
+- type: entity
+  id: BriefcasePokemonSet
+  parent: BriefcaseSyndiePaw
+  suffix: Syndicate, Bundle, Pokemon
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ClothingOuterHardsuitCarp
+        - id: FireExtinguisher
+        - id: DehydratedSpaceCarp
+        - id: DehydratedSpaceCarp
+        - id: DehydratedSpaceCarp
+        - id: DehydratedSpaceCarp
+        - id: DehydratedSpaceCarp
+        - id: SyndicateSpongeBox
+        - id: SyndicateSpongeBox
+        - id: SyndicateSpongeBox
+        - id: DehydratedSpaceCarp
+        - id: DehydratedSpaceCarp
+        - id: DehydratedSpaceCarp
+        - id: DehydratedSpaceCarp
+        - id: EncryptionKeySyndie
+
+- type: entity
+  id: BriefcaseWesternSet
+  parent: BriefcaseSyndiePaw
+  suffix: Syndicate, Bundle, Western
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: WeaponRevolverPython
+        - id: WeaponRevolverPython
+        - id: ClothingOuterPonchoClassicRobust
+        - id: ClothingShoesBootsCowboyBrownRobust
+        - id: ClothingEyesGlassesSunglasses
+        - id: ClothingHeadHatCowboyBrown
+        - id: ClothingBeltMilitaryWebbing
+        - id: SpeedLoader357_magnumPlasteelAP
+        - id: SpeedLoader357_magnumPlasteelAP
+        - id: SpeedLoader357_magnumPlasteelAP
+        - id: SpeedLoader357_magnumPlasteelAP
+        - id: SpeedLoader357_magnumPlasteelAP
+        - id: SpeedLoader357_magnumPlasteelAP
+        - id: CombatMedipen
+        - id: CombatMedipen
+        - id: EncryptionKeySyndie
+
+- type: entity
+  id: BriefcasePneumaticSet
+  parent: BriefcaseSyndiePaw
+  suffix: Syndicate, Bundle, Pneumatic
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: WeaponImprovisedPneumaticCannon
+        - id: ThrowingKnivesKit
+        - id: ThrowingKnivesKit
+        - id: FoodPieBananaCream
+        - id: FoodPieBananaCream
+        - id: FoodPieBananaCream
+        - id: ClothingUniformJumpsuitClown
+        - id: ClothingMaskClown
+        - id: ClothingShoesClown
+        - id: EncryptionKeySyndie
+
+- type: entity
+  id: BriefcaseNinjaSet
+  parent: BriefcaseSyndiePaw
+  suffix: Syndicate, Bundle, Ninja
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: WeaponHFKatana
+        - id: ThrowingKnivesKit
+        - id: ClothingMaskNinja
+        - id: ChameleonProjector
+        - id: EmpImplanter
+        - id: Bola
+        - id: Bola
+        - id: Bola
+        - id: NocturineChemistryBottle
+        - id: HypopenBox
+        - id: AgentIDCard
+        - id: SmokeImplanter
+        - id: EncryptionKeySyndie
+
+- type: entity
+  id: BriefcaseSketchyDoctorSet
+  parent: BriefcaseSyndiePaw
+  suffix: Syndicate, Bundle, SketchyDoctor
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: AutosurgeonLeftMantisBladeSyndicateFlatpack
+        - id: OmnimedToolSyndie
+        - id: VehicleWheelchairFolded
+        - id: NitrousOxideTankFilled
+        - id: ClothingHandsGlovesLatex
+        - id: AutosurgeonRightMantisBladeSyndicateFlatpack
+        - id: CheapRollerBedSpawnFolded
+        - id: LauncherSyringe
+        - id: ClothingMaskSterile
+        - id: ToyFigurineMedicalDoctor
+        - id: AutosurgeonSandevistanSyndicateFlatpack
+        - id: MedkitCombatFilled
+        - id: ClothingOuterDavidsJacketValid
+        - id: EncryptionKeySyndie

@@ -36,3 +36,30 @@
     interfaces:
       enum.ChameleonUiKey.Key:
         type: ChameleonBoundUserInterface
+
+- type: entity
+  parent: [ClothingOuterPonchoClassic]
+  id: ClothingOuterPonchoClassicRobust
+  name: authentic cowboys poncho
+  description: A poncho made for real cowboy's.
+  components:
+  - type: Armor
+#    traumaDeductions:
+#      Dismemberment: 0.2
+#      OrganDamage: 0.2
+#      BoneDamage: 0.2
+#      VeinsDamage: 0
+#      NerveDamage: 0
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.40
+        Heat: 0.7
+  - type: ExplosionResistance
+    damageCoefficient: 0.90
+#  - type: ModifyDelayedKnockdown
+#    delayDelta: 2
+#    knockdownTimeDelta: -2
+#  - type: StaminaResistance
+#    damageCoefficient: 0.7

@@ -86,6 +86,12 @@ public abstract partial class SharedSubdermalImplantSystem : EntitySystem
         {
             _transformSystem.DropNextTo(entity, uid);
         }
+
+        var ev = new ImplantRemovedEvent(uid, component.ImplantedEntity.Value);
+        RaiseLocalEvent(uid, ref ev);
+
+        component.ImplantedEntity = null;
+        Dirty(uid, component);
     }
 
     /// <summary>
@@ -216,6 +222,22 @@ public readonly struct ImplantImplantedEvent
     public readonly EntityUid? Implanted;
 
     public ImplantImplantedEvent(EntityUid implant, EntityUid? implanted)
+    {
+        Implant = implant;
+        Implanted = implanted;
+    }
+}
+/// <summary>
+/// Event that is raised whenever an implant is removed from someone.
+/// Raised on the the implant entity.
+/// </summary>
+[ByRefEvent]
+public readonly record struct ImplantRemovedEvent
+{
+    public readonly EntityUid Implant;
+    public readonly EntityUid Implanted;
+
+    public ImplantRemovedEvent(EntityUid implant, EntityUid implanted)
     {
         Implant = implant;
         Implanted = implanted;

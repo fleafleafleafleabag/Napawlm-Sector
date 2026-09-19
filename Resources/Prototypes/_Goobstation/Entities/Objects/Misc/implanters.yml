@@ -36,3 +36,19 @@
   components:
   - type: Implanter
     implant: BluespaceLifelineImplant
+
+- type: entity
+  parent: BaseImplantOnlyImplanterSyndi
+  id: SmokeImplanter
+  suffix: Smoke
+  components:
+  - type: Implanter
+    implant: SmokeImplant
+
+- type: entity
+  id: NutrimentImplanter
+  suffix: Nutriment Pump
+  parent: BaseImplantOnlyImplanterSyndi
+  components:
+  - type: Implanter
+    implant: NutrimentPumpImplant

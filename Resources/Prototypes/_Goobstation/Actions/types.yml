@@ -32,6 +32,21 @@
           volume: 6.5
       event: !type:DashActionEvent
 
+- type: entity # Omuport Napawlm
+  id: ActionActivateSmokeImplant
+  name: Activate smoke
+  description: Releases a puff of smoke on activation
+  components:
+  - type: InstantAction
+    checkCanInteract: false
+    useDelay: 30
+    itemIconStyle: BigAction
+    priority: -20
+    icon:
+      sprite: Objects/Weapons/Grenades/smoke.rsi
+      state: icon
+    event: !type:ActivateImplantEvent
+
 - type: entity      
   id: ActionToggleRightMantisBlade
   name: Toggle Right Mantis Blade

@@ -1,9 +1,9 @@
 # Frontier
-job-name-bailiff = SDF Captain
-job-name-brigmedic = SDF Corpsman
-job-name-cadet-nf = SDF Private
+job-name-bailiff = TSFMC Captain
+job-name-brigmedic = TSFMC Corpsman
+job-name-cadet-nf = TSFMC Private
 job-name-contractor = Spacer
-job-name-deputy = SDF Marine
+job-name-deputy = TSFMC Marine
 job-name-nf-detective = Detective
 job-name-ertmailcarrier = ERT Mail Carrier
 job-name-mercenary = Mercenary
@@ -14,9 +14,9 @@ job-name-pirate-captain = PDV Grand Vizier
 job-name-pirate-first-mate = PDV Asvaran
 job-name-pdv-denasvar = PDV Denasvar
 job-name-pdv-tarkhan = PDV Tarkhan
-job-name-tsf-marsoc = SDF Special Operative
+job-name-tsf-marsoc = TSFMC MARSOC Operative
 job-name-security-guard = Judge
-job-name-sheriff = SDF Colonel
+job-name-sheriff = TSFMC Colonel
 job-name-stc = Station Traffic Controller
 job-name-sr = Overseer
 job-name-pal = Public Affairs Liaison
@@ -41,9 +41,9 @@ JobSTC = Station Traffic Controller
 job-name-senior-engineer = Senior Engineer
 job-name-senior-researcher = Senior Researcher
 job-name-senior-physician = Senior Physician
-job-name-senior-officer = SDF Fireteam Leader
+job-name-senior-officer = TSFMC Fireteam Leader
 
 JobSeniorEngineer = Senior Engineer
-JobSeniorOfficer = SDF Fireteam Leader
+JobSeniorOfficer = TSFMC Fireteam Leader
 JobSeniorPhysician = Senior Physician
 JobSeniorResearcher = Senior Researcher

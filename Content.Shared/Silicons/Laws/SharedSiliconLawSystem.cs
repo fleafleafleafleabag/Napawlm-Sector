@@ -23,11 +23,9 @@ public abstract partial class SharedSiliconLawSystem : EntitySystem
     public override void Initialize()
     {
         InitializeUpdater();
-        //SubscribeLocalEvent<EmagSiliconLawComponent, GotEmaggedEvent>(OnGotEmagged); // Frontier: no borg theft :(
+        SubscribeLocalEvent<EmagSiliconLawComponent, GotEmaggedEvent>(OnGotEmagged); /// Pawlm, returned the ability for borgs to be emagged. why would you remove this? this is stupid.
     }
 
-    // Frontier: unused
-    /*
     private void OnGotEmagged(EntityUid uid, EmagSiliconLawComponent component, ref GotEmaggedEvent args)
     {
         if (!_emag.CompareFlag(args.Type, EmagType.Interaction))
@@ -69,8 +67,6 @@ public abstract partial class SharedSiliconLawSystem : EntitySystem
 
         args.Handled = true;
     }
-    */
-    // End Frontier: unused
 
     public virtual void NotifyLawsChanged(EntityUid uid, SoundSpecifier? cue = null)
     {

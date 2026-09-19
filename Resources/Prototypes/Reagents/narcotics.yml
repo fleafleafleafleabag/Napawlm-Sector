@@ -443,7 +443,7 @@
           shouldHave: false
         - !type:ReagentThreshold
           reagent: Nocturine
-          min: 18 # Mono
+          min: 8 # Pawlm
         key: ForcedSleep
         component: ForcedSleeping
         refresh: false

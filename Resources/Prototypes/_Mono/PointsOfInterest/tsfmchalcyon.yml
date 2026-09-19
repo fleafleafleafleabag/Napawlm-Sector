@@ -13,7 +13,7 @@
 - type: pointOfInterest
   id: TSFMCHalcyon
   parent: [BasePOI, BaseRepairablePOI]
-  name: 'Sol Defense Force HQ'
+  name: 'TSFMC Flagship Halcyon'
   minimumDistance: 4500 # Mono
   maximumDistance: 5500 # Mono
   spawnGamePreset: [ NFAdventure, NFPirate, MonoStandard, MonoRogueTSF, MonoTSFUSSP, MonoADS, MonoChimera, MonoMixed, MonoAllAtOnce ]
@@ -35,7 +35,7 @@
 
 - type: gameMap
   id: TSFMCHalcyon
-  mapName: 'Sol Defense Force HQ'
+  mapName: 'TSFMC Flagship Halcyon'
   mapPath: /Maps/_Mono/POI/tsfmchalcyon.yml
   minPlayers: 0
   randomRotation: false
@@ -47,7 +47,7 @@
         description: "This reminds you of tel aviv."
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Sol Defense Force HQ'
+          mapNameTemplate: 'TSFMC Flagship Halcyon'
         - type: ExtraStationInformation
           icon:
             sprite: _NF/Structures/Decoration/banner.rsi

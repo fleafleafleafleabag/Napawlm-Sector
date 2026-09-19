@@ -35,8 +35,8 @@
 - type: entity
   parent: BaseItem
   id: SpaceCashCounterfeit
-  name: creditts
-  description: Valerian Standard C- What the hell...? THESE ARE LOUSY FAKES!!!
+  name: credits
+  description: Valerian Standard Credits, the lifeblood of the galaxy! Most commonly referred to as "Credits" they are prints sourced from the Veridian Emerald Bonk, the largest bank in the galaxy.
   components:
   - type: Item
     shape:

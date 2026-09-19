@@ -37,3 +37,73 @@
     Telecrystal: 75
   categories:
   - UplinkWearables
+
+- type: listing
+  id: UplinkBulkMosin
+  name: uplink-bulk-mosin-name
+  description: uplink-bulk-mosin-desc
+  productEntity: CrateSyndicateBulkMosin
+  cost:
+    Telecrystal: 25
+  categories:
+    - UplinkWeaponry
+
+- type: listing
+  id: UplinkUndeterminedBundle
+  name: Undetermined Bundle Crate
+  description: Contains a bundle of 14+ sets, guaranteed to come with a syndicate encryption key, willing to test your luck?
+  productEntity: CrateSyndicateUndetermined
+  cost:
+    Telecrystal: 150
+  categories:
+  - UplinkDisruption
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
+      - NukeOpsUplink
+  - !type:BuyerWhitelistCondition
+    blacklist:
+      components:
+      - SurplusBundle
+
+- type: listing
+  id: UplinkMindcontrolImplanter
+  name: uplink-mindcontrol-implant-name
+  description: uplink-mindcontrol-implant-desc
+  icon: { sprite: /Textures/Objects/Specific/Medical/syndi_implanter.rsi, state: implanter0 }
+  productEntity: MindcontrolImplanter
+  cost:
+    Telecrystal: 40
+  categories:
+    - UplinkImplants
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
+      - NukeOpsUplink
+      - ContravendUplink
+
+- type: listing
+  id: UplinkSmokeImplanter
+  name: uplink-smoke-implant-name
+  description: uplink-smoke-implant-desc
+  icon: { sprite: /Textures/Objects/Weapons/Grenades/smoke.rsi, state: icon }
+  productEntity: SmokeImplanter
+  cost:
+    Telecrystal: 10
+  categories:
+    - UplinkImplants
+
+- type: listing
+  id: UplinkNutrimentImplanter
+  name: uplink-nutriment-implant-name
+  description: uplink-nutriment-implant-desc
+  icon: { sprite: Objects/Consumable/Food/burger.rsi, state: bacon }
+  productEntity: NutrimentImplanter
+  cost:
+    Telecrystal: 5
+  categories:
+  - UplinkImplants

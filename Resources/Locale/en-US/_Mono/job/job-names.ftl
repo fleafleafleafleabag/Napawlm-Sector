@@ -10,8 +10,8 @@ job-supervisors-ussp-sergeant = the Serzhants
 job-name-md-medic = Emergency Responder
 
 # MARK: TSF
-job-name-tsf-engineer = SDF Engineer
-job-name-tsf-borg = SDF Cyborg
+job-name-tsf-engineer = TSFMC Engineer
+job-name-tsf-borg = TSFMC Cyborg
 
 # MARK: PDV
 job-name-pdv-borg = PDV Cyborg
