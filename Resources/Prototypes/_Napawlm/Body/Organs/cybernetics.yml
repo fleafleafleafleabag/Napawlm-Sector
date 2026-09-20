@@ -1,0 +1,13 @@
+- type: entity
+  parent: OrganHumanHeart
+  id: OrganHeartBlackFlashSyndie
+  name: syndicate redspace heart
+  description: A strange piece of cybernetic hardware designed to replace the heart. it allows the user to channel a form of redspace energy into a single hit.
+  components:
+  - type: Cybernetics
+  - type: Sprite
+    sprite: _Mono/Objects/Misc/cybernetics.rsi
+    state: iatric_monitor
+  - type: Organ
+    onAdd:
+    - type: BlackFlash

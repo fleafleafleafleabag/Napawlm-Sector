@@ -39,3 +39,28 @@
   - type: Sprite
     layers:
     - state: medical_lathe
+
+- type: entity
+  parent: BaseAutosurgeonSyndicate
+  id: AutosurgeonBlackFlashSyndie
+  name: autosurgeon (syndicate redspace heart)
+  description: Replaces your heart with the redspace heart, makes your opponents think before they even get up
+  components:
+  - type: AutoSurgeon
+    targetBodyPart: Torso
+    targetOrgan: Heart
+    newPartProto: OrganHeartBlackFlashSyndie
+
+- type: entity
+  parent: BaseNFFlatpack
+  id: AutosurgeonBlackFlashSyndieSyndicateFlatpack
+  name: Syndicate autosurgeon (syndicate redspace heart) flatpack
+  description: A flatpack used for constructing a Syndicate autosurgeon.
+  components:
+  - type: Flatpack
+    entity: AutosurgeonBlackFlashSyndie
+  - type: StaticPrice
+    price: 50000
+  - type: Sprite
+    layers:
+    - state: medical_lathe

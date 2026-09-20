@@ -117,6 +117,10 @@
       weight: 5.5
       children: # sketchy doctor set
       - id: BriefcaseSketchyDoctorSet
+    - !type:GroupSelector
+      weight: 5.5
+      children: # brother set
+      - id: BriefcaseBrotherSet
 
 - type: entity
   parent: CrateSyndicate
@@ -131,7 +135,7 @@
         rolls: !type:RangeNumberSelector
           range: 3, 3
           # for some reason, the selector here adds 1 to whatever value it generates,
-          # so this is actually 1?
+          # so this is actually 3? what!??!?!?!?!?
   - type: StaticPrice
     price: 69
 
@@ -505,4 +509,21 @@
         - id: AutosurgeonSandevistanSyndicateFlatpack
         - id: MedkitCombatFilled
         - id: ClothingOuterDavidsJacketValid
+        - id: EncryptionKeySyndie
+
+- type: entity
+  id: BriefcaseBrotherSet
+  parent: BriefcaseSyndiePaw
+  suffix: Syndicate, Bundle, Brother
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: AutosurgeonBlackFlashSyndieSyndicateFlatpack
+        - id: ClothingUniformJumpsuitDameDane
+        - id: ClothingShoesDameDane
+        - id: ClothingOuterDamedane
+        - id: WizardsGrimoireBrother
+        - id: CDDogtags
         - id: EncryptionKeySyndie

@@ -1,0 +1,28 @@
+- type: entity
+  id: WizardsGrimoireBrother
+  name: brother's grimoire
+  description: now all you need is a brother
+  suffix: Wizard
+  parent: [ BaseItem, StorePresetSpellbookBrother ]
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/books.rsi
+      layers:
+      - state: paper_blood
+      - state: cover_strong
+        color: "#88d1c5"
+      - state: decor_wingette_circle
+        color: "#2d403d"
+      - state: icon_mount
+      - state: icon_atmos
+    - type: UserInterface
+      interfaces:
+        enum.StoreUiKey.Key:
+          type: StoreBoundUserInterface
+    - type: ActivatableUI
+      key: enum.StoreUiKey.Key
+    - type: Store
+      refundAllowed: false
+      ownerOnly: true # get your own tome!
+      balance:
+        WizCoin: 1

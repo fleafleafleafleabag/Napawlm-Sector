@@ -142,6 +142,7 @@
     WizCoin: 1
   categories:
   - SpellbookUtility
+  - SpellbookBrother
   conditions:
   - !type:ListingLimitedStockCondition
     stock: 1
