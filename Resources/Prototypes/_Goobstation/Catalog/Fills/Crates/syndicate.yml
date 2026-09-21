@@ -50,75 +50,75 @@
   table: !type:GroupSelector
     children:
     - !type:GroupSelector
-      weight: 5.5
+      weight: 1
       children: #lawyer set
       - id: BriefcaseLawyerSet
     - !type:GroupSelector
-      weight: 5.5
+      weight: 1
       children: # doorkicker set
       - id: BriefcaseDoorKickerSet
     - !type:GroupSelector
-      weight: 5.5
+      weight: 1
       children: # no russian set
       - id: BriefcaseNoRussianSet
     - !type:GroupSelector
-      weight: 5.5
+      weight: 1
       children: # pirate captain set
       - id: BriefcasePirateCaptainSet
     - !type:GroupSelector
-      weight: 5.5
+      weight: 1
       children: # tunnel clown set
       - id: BriefcaseTunnelClownSet
     - !type:GroupSelector
-      weight: 5.5
+      weight: 1
       children: # spy set
       - id: BriefcaseSpySet
     - !type:GroupSelector
-      weight: 5.5
+      weight: 1
       children: # hitman set
       - id: BriefcaseHitmanSet
     - !type:GroupSelector
-      weight: 5.5
+      weight: 1
       children: # hacker (reworked) set
       - id: BriefcaseHackerSet
     - !type:GroupSelector
-      weight: 5.5
+      weight: 1
       children: # sith set
       - id: BriefcaseSithSet
     - !type:GroupSelector
-      weight: 5.5
+      weight: 1
       children: # grenadier set
       - id: BriefcaseGrenadierSet
     - !type:GroupSelector
-      weight: 5.5
+      weight: 1
       children: # flukie set
       - id: BriefcaseFlukieSet
     - !type:GroupSelector
-      weight: 5.5
+      weight: 1
       children: # friendship set
       - id: BriefcaseFriendshipSet
     - !type:GroupSelector
-      weight: 5.5
+      weight: 1
       children: # pokemon set
       - id: BriefcasePokemonSet
     - !type:GroupSelector
-      weight: 5.5
+      weight: 1
       children: # western set
       - id: BriefcaseWesternSet
     - !type:GroupSelector
-      weight: 5.5
+      weight: 1
       children: # pneumatic set
       - id: BriefcasePneumaticSet
     - !type:GroupSelector
-      weight: 5.5
+      weight: 1
       children: # ninja set
       - id: BriefcaseNinjaSet
     - !type:GroupSelector
-      weight: 5.5
+      weight: 1
       children: # sketchy doctor set
       - id: BriefcaseSketchyDoctorSet
     - !type:GroupSelector
-      weight: 5.5
+      weight: 1
       children: # brother set
       - id: BriefcaseBrotherSet
 
@@ -523,7 +523,8 @@
         - id: AutosurgeonBlackFlashSyndieSyndicateFlatpack
         - id: ClothingUniformJumpsuitDameDane
         - id: ClothingShoesDameDane
-        - id: ClothingOuterDamedane
+        - id: ClothingOuterDameDane
         - id: WizardsGrimoireBrother
         - id: CDDogtags
+        - id: ClothingHandsGlovesBoxingRigged
         - id: EncryptionKeySyndie

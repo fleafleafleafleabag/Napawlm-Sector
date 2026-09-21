@@ -34,7 +34,7 @@
   cost:
     WizCoin: 3
   categories:
-  - SpellbookOffensive
+  - SpellbookOffensived
   conditions:
   - !type:ListingLimitedStockCondition
     stock: 1
@@ -135,13 +135,12 @@
 # Taking an Eldritch spell, good proof of concept and a way to celebrate everything magic.
 - type: listing
   id: SpellbookVoidApplause
-  name: spellbook-voidapplause-name
-  description: spellbook-voidapplause-desc
+  name: spellbook-blood-line-clap-name
+  description: spellbook-blood-line-clap-desc
   productAction: ActionVoidApplause
   cost:
     WizCoin: 1
   categories:
-  - SpellbookUtility
   - SpellbookBrother
   conditions:
   - !type:ListingLimitedStockCondition
