@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+- type: entity # Napawlm, ported.
+  parent: BaseMindRoleAntag
+  id: MindRoleBrainwashed
+  name: Brainwashed Role
+  components:
+  - type: MindRole
+    antagPrototype: Mindcontrolled
+    exclusiveAntag: true
+    roleType: Familiar
+    subtype: role-subtype-brainwashed
+  - type: MindcontrolledRole
