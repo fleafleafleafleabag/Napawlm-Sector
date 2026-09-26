@@ -91,6 +91,10 @@
   - type: AltFireMelee
     attackType: Light
   # Mono end
+  # Napawlm / ported dual weilding..........!
+  - type: Multishot
+    spreadMultiplier: 3
+    spreadAddition: 55 # this is supposed to b harder because its a SMG and theres more miss chances with SMGs but  i was too lazy to port them over so i guess you get an atrocity of aiming
 
 # Mono - moved Drozd, C-20, & Atreides to _Mono.
 

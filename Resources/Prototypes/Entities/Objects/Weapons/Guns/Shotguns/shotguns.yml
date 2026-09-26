@@ -90,6 +90,10 @@
   - type: AltFireMelee
     attackType: Light
   # Mono end
+  # Napawlm / ported dual weilding..........!
+  - type: Multishot
+    spreadMultiplier: 3
+    spreadAddition: 40
 
 - type: entity
   name: PA M-12 Bulldog (12 gauge)

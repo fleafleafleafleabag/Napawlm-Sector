@@ -1,0 +1,5 @@
+- type: weightedRandom
+  id: ContracteeObjectiveGroups
+  weights:
+    TraitorObjectiveGroupKill: 1
+    #add more latar yo
