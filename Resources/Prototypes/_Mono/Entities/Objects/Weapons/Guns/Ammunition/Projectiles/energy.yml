@@ -46,8 +46,8 @@
   - type: HitscanBasicDamage
     damage:
       types:
-        Heat: 22
-        Structural: 10
+        Heat: 11
+        Structural: 5
   - type: HitscanBasicVisuals
     muzzleFlash:
       sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
@@ -70,8 +70,8 @@
   - type: HitscanBasicDamage
     damage:
       types:
-        Heat: 35
-        Structural: 50
+        Heat: 17.5
+        Structural: 25
   - type: HitscanBasicVisuals
     muzzleFlash:
       sprite: _Mono/Objects/Weapons/Guns/Projectiles/lasers.rsi
@@ -94,8 +94,8 @@
   - type: HitscanBasicDamage
     damage:
       types:
-        Radiation: 45
-        Heat: 15
+        Radiation: 22.5
+        Heat: 7.5
   - type: HitscanBasicVisuals
     muzzleFlash:
       sprite: _Mono/Objects/Weapons/Guns/Projectiles/lasers.rsi

@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 25
+        Piercing: 12.5
     armorPenetration: 0.085
 
 - type: entity
@@ -19,7 +19,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 2
+        Blunt: 1
 
 - type: entity
   id: Bullet762x39mmRubber
@@ -30,7 +30,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 3
+        Blunt: 1.5
 
 - type: entity
   id: Bullet762x39mmIncendiary
@@ -41,8 +41,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 11
-        Heat: 9
+        Piercing: 5.5
+        Heat: 4.5
 
 - type: entity
   id: Bullet762x39mmUranium
@@ -53,8 +53,8 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 10
-        Piercing: 13
+        Radiation: 5
+        Piercing: 6.5
 
 - type: entity
   id: Bullet762x39mmSubsonic
@@ -65,7 +65,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 23
+        Piercing: 11.5
     armorPenetration: 0.05
 
 # Mono AP syst
@@ -80,8 +80,8 @@
   - type: Projectile
     damage:
       types:
-        Slash: 6
-        Piercing: 35
+        Slash: 3
+        Piercing: 17.5
     armorPenetration: -0.65
 
 - type: entity
@@ -93,8 +93,8 @@
   - type: Projectile
     damage:
       types:
-        Slash: 8
-        Piercing: 42
+        Slash: 4
+        Piercing: 21
     armorPenetration: -0.95
 
 #armor-piercing:
@@ -108,6 +108,6 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 15
+        Piercing: 7.5
         Structural: 50
     armorPenetration: 0.6
