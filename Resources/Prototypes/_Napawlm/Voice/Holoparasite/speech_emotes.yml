@@ -1,0 +1,15 @@
+# - type: # emote couldnt get this to work at all sorry
+#   id: HoloShriek
+#   name: HoloShriek
+#   category: General
+#   icon: Interface/Actions/scream.png
+#   chatMessages: ["screeches!"]
+#   chatTriggers:
+#     - screech
+#     - screeches
+#     - screeching
+#     - screeached
+#     - shriek
+#     - shrieks
+#     - shrieking
+#     - shrieked

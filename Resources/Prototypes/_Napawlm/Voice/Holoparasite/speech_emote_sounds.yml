@@ -1,0 +1,8 @@
+# # species
+# - type: emoteSounds
+#   id: HoloShriekssound
+#   params:
+#     variation: 0.125
+#   sounds:
+#     Screech:
+#       collection: HoloShrieks

@@ -1,0 +1,10 @@
+- type: entity
+  id: StorePresetSpellbookBrother
+  abstract: true
+  components:
+  - type: Store
+    name: store-preset-name-spellbook-brother
+    categories:
+    - SpellbookBrother     #buraza
+    currencyWhitelist:
+    - WizCoin

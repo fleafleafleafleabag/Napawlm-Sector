@@ -18,12 +18,12 @@
   id: UplinkRevolverPython
   name: uplink-revolver-python-name
   description: uplink-revolver-python-desc
-  productEntity: WeaponRevolverPythonAP
+  productEntity: WeaponRevolverPython
   discountCategory: rareDiscounts
   discountDownTo:
     Telecrystal: 10 # Mono
   cost:
-    Telecrystal: 20 # Mono # Originally was 13 and then 8 TC but was not used due to high cost
+    Telecrystal: 40 # Mono # Originally was 13 and then 8 TC but was not used due to high cost
   categories:
   - UplinkWeaponry
 
@@ -59,10 +59,10 @@
   icon: { sprite: /Textures/Objects/Weapons/Melee/e_sword.rsi, state: icon }
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 15 # Mono #4->3 Mono Edit
+    Telecrystal: 25 # Napawlm edit 30 to 40 due to giving them back their reflect
   productEntity: EnergySword
   cost:
-    Telecrystal: 30 # Mono #8->6 Mono Edit
+    Telecrystal: 40 # Napawlm edit 30 to 40 due to giving them back their reflect
   categories:
   - UplinkWeaponry
 
@@ -88,9 +88,9 @@
   productEntity: ThrowingKnivesKit
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 15 # Mono
+    Telecrystal: 5 # Napawlm - low value item
   cost:
-    Telecrystal: 30 # Mono
+    Telecrystal: 10 # Napawlm - low value item
   categories:
     - UplinkWeaponry
 
@@ -101,9 +101,9 @@
   productEntity: ClothingHandsGlovesNorthStar
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 15 # Mono #4->3 Mono Edit
+    Telecrystal: 10 # Napawlm - low value item
   cost:
-    Telecrystal: 30 # Mono #8->6 Mono Edit
+    Telecrystal: 20 # Napawlm - low value item
   categories:
   - UplinkWeaponry
 
@@ -114,16 +114,16 @@
   productEntity: ToolboxElectricalTurretFilled
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 15 # Mono
+    Telecrystal: 25 # Mono
   cost:
-    Telecrystal: 30 # Mono
+    Telecrystal: 50 # Mono
   categories:
   - UplinkWeaponry
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist: # Mono - Whitelisted now
-        tags:
-          - NukeOpsUplink
+  # conditions: # Napawlm - not whitelisted anymore
+  #   - !type:StoreWhitelistCondition
+  #     whitelist: # Mono - Whitelisted now
+  #       tags:
+  #         - NukeOpsUplink
 
 - type: listing
   id: UplinkFireFireAxe
@@ -131,7 +131,7 @@
   description: uplink-fire-axe-flaming-desc
   productEntity: FireAxeFlaming
   cost:
-    Telecrystal: 40
+    Telecrystal: 35
   categories:
   - UplinkWeaponry
 
@@ -143,9 +143,9 @@
   productEntity: EnergyShield
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 15 # Mono #5->3 Mono Edit
+    Telecrystal: 25 # Napawlm - Overpowered after balance changes
   cost:
-    Telecrystal: 40 # Mono #8->6 Mono Edit
+    Telecrystal: 50 # Napawlm - Overpowered after balance changes
   categories:
   - UplinkWeaponry
 #  conditions: # Mono normal uplink
@@ -250,7 +250,7 @@
   - UplinkExplosives
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 5
+    stock: 3
 
 - type: listing
   id: UplinkSmokeGrenade
@@ -282,9 +282,9 @@
   productEntity: SingularityGrenade
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 15 # Mono
+    Telecrystal: 10 # Napawlm
   cost:
-    Telecrystal: 25 # Pawlm
+    Telecrystal: 20 # Pawlm
   categories:
     - UplinkExplosives
 
@@ -308,9 +308,9 @@
   productEntity: MobGrenadePenguin
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 15 # Mono
+    Telecrystal: 10 # Napawlm
   cost:
-    Telecrystal: 25 # Mono
+    Telecrystal: 20 # Napawlm
   categories:
     - UplinkExplosives
   conditions:
@@ -384,9 +384,9 @@
   productEntity: PenExplodingBox
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 5 # Pawlm
+    Telecrystal: 7 # Pawlm
   cost:
-    Telecrystal: 10 # Pawlm
+    Telecrystal: 15 # Pawlm
   categories:
   - UplinkExplosives
 
@@ -475,26 +475,184 @@
 
 # Ammo
 
+#for the viper
 - type: listing
   id: UplinkPistol9mmMagazine
-  name: uplink-pistol-magazine-name
-  description: uplink-pistol-magazine-desc
-  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/Magazine/9x19mm/9x19mm_pistol_mag.rsi, state: red-icon }
+  name: "Pistol Magazine (9x19mm FMJ)"
+  description: "Viper Compatible magazine with 19 bullets."
+  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/Magazine/9x19mm/9x19mm_pistol_mag.rsi, state: base }
   productEntity: Magazine9x19mmPistolFMJ
   cost:
-    Telecrystal: 5 # Mono
+    Telecrystal: 2 # Napawlm
+  categories:
+  - UplinkAmmo
+
+- type: listing
+  id: UplinkPistol9mmMagazineIncendiary
+  name: "Pistol Magazine (9x19mm Incendiary)"
+  description: "Viper Compatible magazine with 19 bullets, give 'em hell, son."
+  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/Magazine/9x19mm/9x19mm_pistol_mag.rsi, state: red }
+  productEntity: Magazine9x19mmPistolIncendiary
+  cost:
+    Telecrystal: 5 # Napawlm
+  categories:
+  - UplinkAmmo
+
+- type: listing
+  id: UplinkPistol9mmMagazineRubber
+  name: "Pistol Magazine (9x19mm Rubber)"
+  description: "Viper Compatible magazine with 19 bullets, for when you're beyond killing."
+  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/Magazine/9x19mm/9x19mm_pistol_mag.rsi, state: rubber }
+  productEntity: Magazine9x19mmPistolRubber
+  cost:
+    Telecrystal: 2 # Napawlm
   categories:
   - UplinkAmmo
 
 # For the C20R
 - type: listing
   id: UplinkMagazine9x19mmSubMachineGunFMJ
-  name: uplink-pistol-magazine-c20r-name
-  description: uplink-pistol-magazine-c20r-desc
-  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/Magazine/9x19mm/9x19mm_smg_mag.rsi, state: red-icon }
+  name: "SMG Magazine (9x19mm FMJ)"
+  description: "C-20R compatible magazine, comes  with 35 bullets."
+  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/Magazine/9x19mm/9x19mm_smg_mag.rsi, state: base }
   productEntity: Magazine9x19mmSubMachineGunFMJ
   cost:
+    Telecrystal: 6 # Mono
+  categories:
+  - UplinkAmmo
+
+- type: listing
+  id: UplinkMagazine9x19mmSubMachineGunIncendiary
+  name: "SMG Magazine (9x19mm Incendiary)"
+  description: "C-20R compatible magazine, comes  with 35 bullets, give 'em hell, son."
+  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/Magazine/9x19mm/9x19mm_smg_mag.rsi, state: red }
+  productEntity: Magazine9x19mmSubMachineGunIncendiary
+  cost:
     Telecrystal: 10 # Mono
+  categories:
+  - UplinkAmmo
+
+- type: listing
+  id: UplinkMagazine9x19mmSubMachineGunRubber
+  name: "SMG Magazine (9x19mm Rubber)"
+  description: "C-20R compatible magazine, comes  with 35 bullets, for when you're beyond killing."
+  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/Magazine/9x19mm/9x19mm_smg_mag.rsi, state: rubber }
+  productEntity: Magazine9x19mmSubMachineGunRubber
+  cost:
+    Telecrystal: 5 # Mono
+  categories:
+  - UplinkAmmo
+
+# for the ornata
+- type: listing
+  id: UplinkMagazine46x30mmPistolFMJ
+  name: "Pistol Magazine (4.6x30mm FMJ)"
+  description: "Ornata Compatible magazine with 21 bullets."
+  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/Magazine/4.6x30mm/4.6x30mm_pistol_mag.rsi, state: base }
+  productEntity: Magazine46x30mmPistolFMJ
+  cost:
+    Telecrystal: 2 # Napawlm
+  categories:
+  - UplinkAmmo
+
+- type: listing
+  id: UplinkMagazine46x30mmPistolIncendiary
+  name: "Pistol Magazine (4.6x30mm Incendiary)"
+  description: "Ornata Compatible magazine with 21 bullets, give 'em hell, son."
+  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/Magazine/4.6x30mm/4.6x30mm_pistol_mag.rsi, state: base }
+  productEntity: Magazine46x30mmPistolIncendiary
+  cost:
+    Telecrystal: 5 # Napawlm
+  categories:
+  - UplinkAmmo
+
+- type: listing
+  id: UplinkMagazine46x30mmPistolPlasteelAP
+  name: "Pistol Magazine (4.6x30mm AP)"
+  description: "Ornata Compatible magazine with 21 bullets, pierces through armor like its butter."
+  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/Magazine/4.6x30mm/4.6x30mm_pistol_mag.rsi, state: base }
+  productEntity: Magazine46x30mmPistolPlasteelAP
+  cost:
+    Telecrystal: 5 # Napawlm
+  categories:
+  - UplinkAmmo
+
+# for the bulldog
+- type: listing
+  id: UplinkMagazine12_gaugeBuckshot
+  name: "Shotgun Magazine (12 Gauge Buckshot)"
+  description: "Bulldog Compatible magazine with 12 shells."
+  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/Magazine/12_gauge/12_gauge_drum.rsi/, state: base }
+  productEntity: Magazine12_gaugeBuckshot
+  cost:
+    Telecrystal: 5 # Napawlm
+  categories:
+  - UplinkAmmo
+
+- type: listing
+  id: UplinkMagazine12_gaugeBeanbag
+  name: "Shotgun Magazine (12 Gauge Beanbag)"
+  description: "Bulldog Compatible magazine with 12 shells, for when you're beyond killing."
+  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/Magazine/12_gauge/12_gauge_drum.rsi/, state: beanbag }
+  productEntity: Magazine12_gaugeBeanbag
+  cost:
+    Telecrystal: 4 # Napawlm
+  categories:
+  - UplinkAmmo
+
+- type: listing
+  id: UplinkMagazine12_gaugeIncendiary
+  name: "Shotgun Magazine (12 Gauge Incendiary)"
+  description: "Bulldog Compatible magazine with 12 shells, give 'em hell, son."
+  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/Magazine/12_gauge/12_gauge_drum.rsi/, state: incendiary }
+  productEntity: Magazine12_gaugeIncendiary
+  cost:
+    Telecrystal: 7 # Napawlm
+  categories:
+  - UplinkAmmo
+
+- type: listing
+  id: UplinkMagazine12_gaugeSlug
+  name: "Shotgun Magazine (12 Gauge Slug)"
+  description: "Bulldog Compatible magazine with 12 shells, pierces through people, butter and walls alike."
+  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/Magazine/12_gauge/12_gauge_drum.rsi/, state: slug }
+  productEntity: Magazine12_gaugeSlug
+  cost:
+    Telecrystal: 4 # Napawlm
+  categories:
+  - UplinkAmmo
+
+- type: listing
+  id: UplinkMagazine762x39mmBox
+  name: "LMG Magazine (7.62x39mm Box)"
+  description: "L6 SAW Compatible magazine with 100 bullets, if you're buying this, use our promo code 'No russian' for a discount!"
+  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/Magazine/12_gauge/12_gauge_drum.rsi/, state: slug }
+  productEntity: Magazine762x39mmBox
+  cost:
+    Telecrystal: 15 # Napawlm
+  categories:
+  - UplinkAmmo
+
+#for the burner
+- type: listing
+  id: UplinkMagazine127x99mm
+  name: "Anti-Material Magazine (12.7x99mm FMJ)"
+  description: "Burner compatible magazine with 10 bullets."
+  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/Magazine/12.7x99mm/12.7x99mm_mag.rsi, state: base }
+  productEntity: Magazine127x99mm
+  cost:
+    Telecrystal: 10 # Napawlm
+  categories:
+  - UplinkAmmo
+
+- type: listing
+  id: UplinkMagazine127x99mmExplosive
+  name: "Anti-Material Magazine (12.7x99mm HE)"
+  description: "Burner compatible magazine with 10 explosive bullets, they say the scariest part isnt being shot by it, but hearing others be shot and knowing you're next."
+  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/Magazine/12.7x99mm/12.7x99mm_mag.rsi, state: red }
+  productEntity: Magazine127x99mmExplosive
+  cost:
+    Telecrystal: 20 # Napawlm
   categories:
   - UplinkAmmo
 
@@ -506,7 +664,7 @@
   icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/Magazine/6.35x40mm_caseless/6.35x40mm_caseless_pistol_mag.rsi, state: red-icon }
   productEntity: Magazine635x40mmCaselessPistol
   cost:
-    Telecrystal: 5 # Mono
+    Telecrystal: 2 # Mono
   categories:
   - UplinkAmmo
 
@@ -518,7 +676,18 @@
   icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/357_magnum/357_magnum_speed_loader.rsi, state: icon }
   productEntity: SpeedLoader357_magnumAP
   cost:
-    Telecrystal: 15 # Mono
+    Telecrystal: 20 # Napawlm
+  categories:
+  - UplinkAmmo
+
+- type: listing
+  id: UplinkSpeedLoader357_magnumFMJ
+  name: "Revolver Speedloader (.357 Magnum FMJ)"
+  description: "A speedloader with 6 FMJ bullets, compatible with the Python."
+  icon: { sprite: /Textures/_Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/357_magnum/357_magnum_speed_loader.rsi, state: icon }
+  productEntity: SpeedLoader357_magnumFMJ
+  cost:
+    Telecrystal: 5 # Napawlm
   categories:
   - UplinkAmmo
 
@@ -529,7 +698,7 @@
   description: uplink-mosin-ammo-desc
   productEntity: AmmoBox762x39mmFMJ
   cost:
-    Telecrystal: 5 # Mono
+    Telecrystal: 2 # Mono
   categories:
   - UplinkAmmo
 
@@ -540,7 +709,7 @@
   description: uplink-sniper-ammo-desc
   productEntity: AmmoBox145x114mm
   cost:
-    Telecrystal: 10 # Mono
+    Telecrystal: 20 # Mono
   categories:
   - UplinkAmmo
 
@@ -614,15 +783,15 @@
   icon: { sprite: /Textures/Structures/Wallmounts/signs.rsi, state: bio }
   productEntity: ClothingBackpackDuffelZombieBundle
   cost:
-    Telecrystal: 40
+    Telecrystal: 100
   categories:
   - UplinkChemicals
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - NukeOpsUplink
-  - !type:BuyerWhitelistCondition
+  # conditions:
+  # - !type:StoreWhitelistCondition
+  #   whitelist:
+  #     tags:
+  #     - NukeOpsUplink
+  # - !type:BuyerWhitelistCondition
     blacklist:
       components:
       - SurplusBundle
@@ -634,9 +803,9 @@
   productEntity: NocturineChemistryBottle
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 5 # Pawlm
+    Telecrystal: 20 # Pawlm
   cost:
-    Telecrystal: 15 # Pawlm
+    Telecrystal: 40 # Pawlm
   categories:
   - UplinkChemicals
 
@@ -673,9 +842,9 @@
   productEntity: Stimpack
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 5 # Mono
-  cost:
     Telecrystal: 10 # Mono
+  cost:
+    Telecrystal: 20 # Mono
   categories:
   - UplinkChemicals
 
@@ -715,9 +884,9 @@
   productEntity: ClothingBackpackDuffelSyndicateMedicalBundleFilled
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 80 # Mono
+    Telecrystal: 35 # Pawlm, lowered
   cost:
-    Telecrystal: 100 # Pawlm
+    Telecrystal: 70 # Pawlm, lowered
   categories:
   - UplinkChemicals
   conditions:
@@ -743,7 +912,7 @@
   discountDownTo:
     Telecrystal: 5 # Mono
   cost:
-    Telecrystal: 10 # Pawlm
+    Telecrystal: 15 # Pawlm
   categories:
   - UplinkDeception
 
@@ -817,6 +986,9 @@
 #    Telecrystal: 5 # Pawlm
   categories:
   - UplinkDeception
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 3
 
 - type: listing
   id: UplinkUltrabrightLantern
@@ -861,15 +1033,12 @@
   icon: { sprite: /Textures/Objects/Tools/Decoys/operative_decoy.rsi, state: folded }
   productEntity: ClothingBackpackDuffelSyndicateDecoyKitFilled
   discountCategory: usualDiscounts
-#  discountDownTo:
-#    Telecrystal: 15 # Mono
-#  cost:
-#    Telecrystal: 30 # Mono
+  discountDownTo:
+    Telecrystal: 5 # Napawlm
+  cost:
+    Telecrystal: 15 # Napawlm
   categories:
   - UplinkDeception
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 5
 
 - type: listing # Frontier - Mono Edit - Readds Explosives
   id: UplinkSyndicateBombFake
@@ -878,9 +1047,9 @@
   productEntity: SyndicateBombFake
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 1 # Pawlm
+    Telecrystal: 20 # Pawlm
   cost:
-    Telecrystal: 2 # Pawlm
+    Telecrystal: 40 # Pawlm
   categories:
   - UplinkDeception
 
@@ -908,7 +1077,7 @@
   discountDownTo:
     Telecrystal: 15 # Mono
   cost:
-    Telecrystal: 20 # Pawlm
+    Telecrystal: 25 # Pawlm
   categories:
   - UplinkDisruption
 
@@ -1913,9 +2082,9 @@
   productEntity: GatfruitSeeds
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 25 # Mono # Frontier: 3<5
+    Telecrystal: 50 # Mono # Frontier: 3<5 | Napawlm, raised to 50.
   cost:
-    Telecrystal: 50 # Mono # Frontier: 6<10 (all the time in the world)
+    Telecrystal: 75 # Mono # Frontier: 6<10 (all the time in the world) | Napawlm, raised to 75 because this thing is demonic.
   categories:
   - UplinkWeaponry # Frontier: UplinkJob<UplinkWeaponry
   # conditions: # Frontier:
@@ -1926,13 +2095,13 @@
 - type: listing
   id: uplinkRiggedBoxingGlovesPassenger
   name: uplink-rigged-boxing-gloves-name
-  description: uplink-rigged-boxing-gloves-desc
+  description: "Float like a butterfly, sting like a bee, count to three, go to sleep."
   productEntity: ClothingHandsGlovesBoxingRigged
   discountCategory: usualDiscounts
   discountDownTo:
     Telecrystal: 15 # Mono
   cost:
-    Telecrystal: 30 # Mono
+    Telecrystal: 40 # Mono
   categories:
     - UplinkWeaponry # Frontier: UplinkJob<UplinkWeaponry
   # conditions: # Frontier: no passengers
@@ -2004,7 +2173,7 @@
   discountDownTo:
     Telecrystal: 15 # Mono
   cost:
-    Telecrystal: 25 # Mono
+    Telecrystal: 45 # Napawlm, python is op
   categories:
   - UplinkWeaponry # Frontier: UplinkJob<UplinkWeaponry
   # conditions: # Frontier: no mimes or clowns
@@ -2066,20 +2235,20 @@
   #   whitelist:
   #   - Clown
 
-# - type: listing # Frontier: seems griefy
-#   id: uplinkHotPotato
-#   name: uplink-hot-potato-name
-#   description: uplink-hot-potato-desc
-#   discountCategory: usualDiscounts
-#   discountDownTo:
-#     Telecrystal: 10 # Mono
-#   productEntity: HotPotato
-#   cost:
-#     Telecrystal: 20 # Mono
-#   categories:
-#   - UplinkJob
-#   conditions:
-#   - !type:BuyerJobCondition
+ - type: listing # Frontier: seems griefy | Napawlm, reverted
+   id: uplinkHotPotato
+   name: uplink-hot-potato-name
+   description: uplink-hot-potato-desc
+   discountCategory: usualDiscounts
+   discountDownTo:
+     Telecrystal: 10 # Mono
+   productEntity: HotPotato
+   cost:
+     Telecrystal: 20 # Mono
+   categories:
+   - UplinkJob
+   conditions:
+#   - !type:BuyerJobCondition | haha jobless bums
 #     whitelist:
 #     - Chef
 #     - Botanist
@@ -2155,7 +2324,7 @@
   discountDownTo:
     Telecrystal: 10 # Mono
   cost:
-    Telecrystal: 25 # Mono
+    Telecrystal: 20 # Napawlm
   categories:
   - UplinkWeaponry # Frontier: UplinkJob<UplinkWeaponry
   conditions:
@@ -2175,9 +2344,9 @@
   productEntity: CombatBakeryKit
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 10 # Mono
+    Telecrystal: 5 # Napawlm
   cost:
-    Telecrystal: 20 # Mono
+    Telecrystal: 10 # Napawlm
   categories:
   - UplinkWeaponry # Frontier: UplinkJob<UplinkWeaponry
   # conditions: # Frontier: no chefs or mimes
