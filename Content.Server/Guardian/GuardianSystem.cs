@@ -5,6 +5,7 @@ using Content.Shared.Audio;
 using Content.Shared.Damage;
 using Content.Shared.DoAfter;
 using Content.Shared.Examine;
+using Content.Shared.FixedPoint;
 using Content.Shared.Guardian;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
@@ -16,6 +17,8 @@ using Robust.Server.GameObjects;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
+using Robust.Shared.Map;
+using Robust.Shared.Physics.Events;
 using Robust.Shared.Player;
 using Robust.Shared.Utility;
 
@@ -332,8 +335,24 @@ namespace Content.Server.Guardian
             if (!guardianComponent.GuardianLoose)
                 return;
 
-            if (!_transform.InRange(guardianXform.Coordinates, hostXform.Coordinates, guardianComponent.DistanceAllowed))
+            if (!guardianXform.Coordinates.TryDistance(EntityManager, hostXform.Coordinates, out var dist))
+            {
                 RetractGuardian(hostUid, hostComponent, guardianUid, guardianComponent);
+                return;
+            }
+
+            if (dist > guardianComponent.HardCapDistance)
+            {
+                RetractGuardian(hostUid, hostComponent, guardianUid, guardianComponent);
+            }
+            else if (dist > guardianComponent.DistanceAllowed)
+            {
+                var coords = _transform.ToMapCoordinates(hostXform.Coordinates);
+                var basePos = coords.Position;
+                var delta = _transform.ToMapCoordinates(guardianXform.Coordinates).Position - basePos;
+                var pos = basePos + delta / dist * (guardianComponent.DistanceAllowed - 0.05f);
+                _transform.SetMapCoordinates(guardianUid, new MapCoordinates(pos, coords.MapId));
+            }
         }
 
         private bool CanRelease(EntityUid guardian)
