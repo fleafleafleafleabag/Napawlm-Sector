@@ -1,0 +1,18 @@
+- type: entity
+  parent: [ClothingShoesBaseButcherable ]
+  id: ClothingShoesSpaceNinjaWeeaboo
+  name: space ninja shoes
+  description: A pair of nyano-enhanced boots with built-in magnetic suction cups, looks a little off, a little too off... THESE ARE FAKE!!!
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Specific/spaceninja.rsi
+  - type: Clothing
+    sprite: Clothing/Shoes/Specific/spaceninja.rsi
+  - type: NoSlip
+  - type: Magboots # always have gravity because le suction cups
+  - type: ClothingSpeedModifier
+    # ninja are masters of sneaking around relatively quickly, won't break cloak
+    walkModifier: 0.95
+    sprintModifier: 0.99
+  - type: FootstepModifier
+    footstepSoundCollection: null

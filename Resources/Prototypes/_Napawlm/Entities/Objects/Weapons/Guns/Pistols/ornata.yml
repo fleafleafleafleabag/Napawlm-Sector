@@ -1,0 +1,55 @@
+- type: entity # ripoff dualetta
+  name: Ornata
+  parent: BaseWeaponPistol
+  id: WeaponPistolOrnata
+  description: One of the twin sisters of the syndicate, its said that it wont fire unless its sister is in another hand, no one knows how it actually knows when you have another one.
+  components:
+  - type: Sprite
+    sprite: _Napawlm/Weapons/Guns/Pistols/ornata.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Napawlm/Objects/Weapons/Guns/Pistols/ornata.rsi
+  - type: Gun
+    minAngle: 1
+    maxAngle: 5
+    angleIncrease: 1
+    angleDecay: 4
+    fireRate: 10
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      path: /Audio/_DV/Weapons/Guns/Gunshots/typewriter.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine46x30mmPistolFMJ
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2 # test
+        whitelist:
+          tags:
+            - Magazine46x30mmPistolFMJ
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge46x30mmFMJ
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge9x19mmFMJ
+  - type: Tag
+    tags:
+    - WeaponPistolOrnata
+  - type: Multishot
+    spreadMultiplier: 1
+    spreadAddition: 1.67 # six or seven bro
+  - type: RequiresDualWield
+    whitelist:
+      tags:
+      - WeaponPistolOrnata

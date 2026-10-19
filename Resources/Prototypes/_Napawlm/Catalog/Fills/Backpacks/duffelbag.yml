@@ -1,0 +1,14 @@
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ClothingBackpackDuffelSyndicateOrnataBundle
+  name: ornata bundle
+  description: "A bundle that contains 2 Ornatas, unleash hell."
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponPistolOrnata
+      - id: WeaponPistolOrnata
+      - id: Magazine46x30mmPistolFMJ
+      - id: Magazine46x30mmPistolFMJ
+      - id: Magazine46x30mmPistolFMJ
+      - id: Magazine46x30mmPistolFMJ

@@ -1,0 +1,11 @@
+- type: entity
+  name: energy katana
+  parent: EnergyKatana
+  id: EnergyKatanaWeeaboo
+  description: A katana infused with... energy. Commonly used by weeaboos who still think Live Action Roleplaying as a space ninja is cool.
+  components:
+  - type: LimitedCharges
+    maxCharges: 1
+    charges: 1
+  - type: AutoRecharge
+    rechargeDuration: 30

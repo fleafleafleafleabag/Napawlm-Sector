@@ -1,0 +1,10 @@
+- type: listing
+  id: UplinkDuffelOrnataBundle
+  name: uplink-ornata-bundle-name
+  description: uplink-ornata-bundle-desc
+  icon: { sprite: /Textures/_Napawlm/Objects/Weapons/Guns/Pistols/ornata.rsi, state: base }
+  productEntity: ClothingBackpackDuffelSyndicateOrnataBundle
+  cost:
+    Telecrystal: 65
+  categories:
+  - UplinkWeaponry
