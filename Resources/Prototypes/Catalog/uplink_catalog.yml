@@ -786,12 +786,7 @@
     Telecrystal: 100
   categories:
   - UplinkChemicals
-  # conditions:
-  # - !type:StoreWhitelistCondition
-  #   whitelist:
-  #     tags:
-  #     - NukeOpsUplink
-  # - !type:BuyerWhitelistCondition
+  conditions:
     blacklist:
       components:
       - SurplusBundle
@@ -2235,19 +2230,19 @@
   #   whitelist:
   #   - Clown
 
- - type: listing # Frontier: seems griefy | Napawlm, reverted
-   id: uplinkHotPotato
-   name: uplink-hot-potato-name
-   description: uplink-hot-potato-desc
-   discountCategory: usualDiscounts
-   discountDownTo:
-     Telecrystal: 10 # Mono
-   productEntity: HotPotato
-   cost:
-     Telecrystal: 20 # Mono
-   categories:
-   - UplinkJob
-   conditions:
+- type: listing # Frontier: seems griefy | Napawlm, reverted
+  id: uplinkHotPotato
+  name: uplink-hot-potato-name
+  description: uplink-hot-potato-desc
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 10 # Mono
+  productEntity: HotPotato
+  cost:
+    Telecrystal: 20 # Mono
+  categories:
+  - UplinkWeaponry
+  conditions:
 #   - !type:BuyerJobCondition | haha jobless bums
 #     whitelist:
 #     - Chef
