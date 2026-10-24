@@ -1,0 +1,60 @@
+- type: entity
+  parent: ClothingHandsGlovesSyntheticBase
+  id: ClothingHandsRicardoChains
+  name: Chains of loyalty
+  description: Chains that give the user extreme strength and the ability to empower the chains by blasting music from them, but they drop the user's IQ by 50 points, which makes them unable to use guns. they cannot be taken off without strenuous work.
+  components:
+  - type: Sprite
+    sprite: _Napawlm/Clothing/Hands/Gloves/ricardo.rsi
+  - type: Clothing
+    sprite: _Napawlm/Clothing/Hands/Gloves/ricardo.rsi
+    equipDelay: 5
+    unequipDelay: 1600 # an hour ish
+    stripDelay: 2600 # c'mon man
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/_Napawlm/Magic/Ricardo/loyaltychainsactivate.ogg
+    soundDeactivate:
+      path: /Audio/_Napawlm/Magic/Ricardo/loyaltychainsdeactivate.ogg
+  - type: ItemToggleActiveSound
+    activeSound:
+      path: /Audio/_Napawlm/Magic/Ricardo/ricardotheme.ogg
+  - type: ItemToggleMeleeWeapon
+    activatedSoundOnHit:
+      path: /Audio/Weapons/smash.ogg
+      params:
+        variation: 0.250
+    activatedDamage:
+      types:
+       Blunt: 32.5
+       Slash: 12.5
+       Cold: 10
+       Structural: 900
+  - type: MeleeWeapon
+    attackRate: 0.6
+    damage:
+      types:
+       Blunt: 22.5
+       Slash: 12.5
+       Structural: 300
+    soundHit:
+      collection: Punch
+    animation: WeaponArcFist
+    mustBeEquippedToUse: true
+  - type: MeleeSpeech
+  - type: ActivatableUI
+    key: enum.MeleeSpeechUiKey.Key
+    verbOnly: true
+  - type: Actions
+  - type: UseDelay
+    delay: 10.0
+  - type: UserInterface
+    interfaces:
+      enum.MeleeSpeechUiKey.Key:
+        type: MeleeSpeechBoundUserInterface
+  - type: StaticPrice
+    price: 0
+  - type: ClothingGrantComponent
+    component:
+    - type: Clumsy
+    - type: Slippery

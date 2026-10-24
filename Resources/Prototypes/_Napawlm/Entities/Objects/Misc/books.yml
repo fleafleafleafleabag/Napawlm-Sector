@@ -1,0 +1,24 @@
+- type: entity
+  parent: BookBase
+  name: Big brother rulebook
+  id: BookRicardo
+  suffix: Ricardo
+  description: To keep track of violators, violations, and the rules themselves.
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/books.rsi
+      layers:
+      - state: paper_blood
+      - state: cover_strong
+        color: "#3d0804"
+      - state: decor_wingette_circle
+        color: "#e6a132"
+      - state: icon_stars
+        color: "#4d276e"
+      - state: icon_medical
+        color: "#fab546"
+      - state: icon_time
+        color: "#fab546"
+      - state: overlay_blood
+    - type: Paper
+      content: book-text-ricardo-rulebook

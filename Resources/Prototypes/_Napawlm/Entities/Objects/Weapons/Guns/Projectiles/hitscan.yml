@@ -1,0 +1,18 @@
+- type: entity
+  parent: Pulse
+  id: GranitéPulse #laaaaaaaaaaaaaaaaaaaaaaaarp
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Heat: 10
+        Shock: 10
+        Structural: 15000 # insane
+  - type: HitscanMultiRaycast
+    maxPierce: 10 # straight off the hristov bra
+    maxDistance: 200
+    collisionMask:
+    - Impassable
+    - Opaque
+    - HighImpassable

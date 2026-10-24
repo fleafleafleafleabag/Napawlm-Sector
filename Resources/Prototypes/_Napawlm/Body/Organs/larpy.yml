@@ -1,0 +1,24 @@
+- type: entity
+  parent: OrganHumanEyes
+  id: OrganDessertEyes
+  name: Dessert eyes
+  description: "These see you with an intense, hungering gaze... almost melts your heart..."
+  components:
+  - type: Organ
+    onAdd:
+    - type: HitscanBatteryAmmoProvider
+      proto: GranitéPulse
+      fireCost: 300
+    - type: BatterySelfRecharger
+      autoRecharge: true
+      autoRechargeRate: 22.5
+    - type: Battery
+      maxCharge: 300
+      startingCharge: 300
+    - type: Gun
+      fireRate: 1
+      useKey: false
+      selectedMode: SemiAuto
+      availableModes:
+      - SemiAuto
+      soundGunshot: /Audio/Weapons/Guns/Gunshots/ship_perforator.ogg

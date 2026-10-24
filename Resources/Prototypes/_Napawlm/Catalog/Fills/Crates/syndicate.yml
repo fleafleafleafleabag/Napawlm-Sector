@@ -60,8 +60,8 @@
       - id: BriefcaseWesternSet
     - !type:GroupSelector
       weight: 1
-      children: # pneumatic set
-      - id: BriefcasePneumaticSet
+      children: # Ricardo from hit game Limbus Company set
+      - id: BriefcaseRicardoSet
     - !type:GroupSelector
       weight: 1
       children: # ninja set

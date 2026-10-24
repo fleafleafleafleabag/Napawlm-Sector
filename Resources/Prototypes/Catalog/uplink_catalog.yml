@@ -787,9 +787,14 @@
   categories:
   - UplinkChemicals
   conditions:
-    blacklist:
-      components:
-      - SurplusBundle
+  # - !type:StoreWhitelistCondition
+  #   whitelist:
+  #     tags:
+  #     - NukeOpsUplink
+  - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
 
 - type: listing
   id: UplinkNocturineChemistryBottle
@@ -2242,13 +2247,13 @@
     Telecrystal: 20 # Mono
   categories:
   - UplinkWeaponry
-  conditions:
-#   - !type:BuyerJobCondition | haha jobless bums
-#     whitelist:
-#     - Chef
-#     - Botanist
-#     - Clown
-#     - Mime
+#  conditions:
+#  - !type:BuyerJobCondition | haha jobless bums
+#    whitelist:
+#    - Chef
+#    - Botanist
+#    - Clown
+#    - Mime
 
 - type: listing
   id: UplinkChimpUpgradeKit

@@ -1,0 +1,8 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakRicardo
+  name: Backstreet big brother mantle
+  description: Now everone knows you're not playing about your coupons.
+  components:
+  - type: Sprite
+    sprite: _Napawlm/Clothing/Neck/Cloaks/ricardo.rsi

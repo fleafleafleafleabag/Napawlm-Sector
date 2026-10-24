@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitRicardo
+  name: Backstreet big brother outfit
+  description: We live in a binary world. The world that is luscious... and the world that is bristly. Are you aware of the differences?
+  components:
+  - type: Sprite
+    sprite: _Napawlm/Clothing/Uniform/Jumpsuit/ricardo.rsi
+  - type: Clothing
+    sprite: _Napawlm/Clothing/Uniform/Jumpsuit/ricardo.rsi
