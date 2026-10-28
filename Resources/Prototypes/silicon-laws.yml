@@ -570,6 +570,7 @@
   - MothershipCore4
   - MothershipCore5
   obeysTo: laws-owner-xenoborgs
+# TODO: add crewsimov equivalent laws for mono.
 
 # ion storm random lawsets
 - type: weightedRandom
@@ -590,4 +591,4 @@
     AntimovLawset: 0.25
     NutimovLawset: 0.5
     Drone: 0.5
-#    Ninja: 0.25 # Frontier
+#    Ninja: 0.25 # Frontierd

@@ -89,6 +89,3 @@
   components:
   - type: TriggerOnSpawn
     timerOnly: true
-
-
-

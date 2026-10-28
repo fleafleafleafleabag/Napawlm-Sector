@@ -100,6 +100,10 @@
   - type: AltFireMelee
     attackType: Light
   # Mono end
+  # Napawlm / ported dual weilding..........!
+  - type: Multishot
+    spreadMultiplier: 2
+    spreadAddition: 40
 
 - type: entity
   name: LWC PT-45A viper (9x19mm)

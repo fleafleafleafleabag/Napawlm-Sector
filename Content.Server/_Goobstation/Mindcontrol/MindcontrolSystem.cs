@@ -102,11 +102,14 @@ public sealed class MindcontrolSystem : EntitySystem
     private string MakeBriefing(EntityUid? masterId)
     {
         var briefing = Loc.GetString("mindcontrol-briefing-get");
+        briefing += "\n" + Loc.GetString("mindcontrol-briefing-get-guide1");
+
         if (masterId != null)
         {
             if (TryComp<MetaDataComponent>(masterId.Value, out var metadata))
             {
-                briefing += "\n " + Loc.GetString("mindcontrol-briefing-get-master", ("master", metadata.EntityName)) + "\n";
+                briefing += "\n" + Loc.GetString("mindcontrol-briefing-get-guide2", ("master", metadata.EntityName));
+                briefing += "\n" + Loc.GetString("mindcontrol-briefing-get-master", ("master", metadata.EntityName)) + "\n";
             }
         }
         return briefing;

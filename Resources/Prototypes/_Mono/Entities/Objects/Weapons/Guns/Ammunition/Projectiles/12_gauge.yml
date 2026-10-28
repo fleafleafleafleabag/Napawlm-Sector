@@ -10,7 +10,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 34
+        Piercing: 17
         Structural: 200
     armorPenetration: 0.2
 
@@ -26,10 +26,10 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 10
+        Blunt: 5
     armorPenetration: -0.2
   - type: StaminaDamageOnCollide
-    damage: 30 # 4 hits to stun
+    damage: 15 # 4 hits to stun
 
 - type: entity
   id: Pellet12_gauge
@@ -43,7 +43,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 11
+        Piercing: 5.5
 
 - type: entity
   id: Pellet12_gaugeSpread
@@ -67,8 +67,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 5
-        Heat: 4
+        Piercing: 2.5
+        Heat: 2
   - type: IgnitionSource
     ignited: true
 
@@ -94,7 +94,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 1
+        Blunt: 0.5
 
 - type: entity
   id: Pellet12_gaugePracticeSpread
@@ -118,8 +118,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 7
-        Slash: 5
+        Piercing: 3.5
+        Slash: 2.5
     armorPenetration: -0.2
 
 - type: entity
@@ -144,7 +144,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 1
+        Blunt: 0.5
   - type: SolutionContainerManager
     solutions:
       ammo:
@@ -204,7 +204,7 @@
     deleteOnCollide: false
     damage:
       types:
-        Heat: 5
+        Heat: 2.5
 
 - type: entity
   id: Pellet12_gaugeUranium
@@ -218,8 +218,8 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 5
-        Piercing: 7
+        Radiation: 2.5
+        Piercing: 3.5
     armorPenetration: -0.1
 
 - type: entity
@@ -247,8 +247,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 25
-        Structural: 5
+        Piercing: 12.5
+        Structural: 2.5
 
 - type: entity
   id: Pellet12_gaugeGrapeshotSpread
@@ -278,7 +278,7 @@
     deleteOnCollide: false
     damage:
       types:
-        Slash: 25
+        Slash: 12.5
     armorPenetration: -0.2
 
 - type: entity
@@ -305,7 +305,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 25
+        Piercing: 12.5
     armorPenetration: -0.5
 
 - type: entity
@@ -330,8 +330,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 80
-        Structural: 300
+        Piercing: 40
+        Structural: 150
     armorPenetration: -0.9
 
 #armor-piercing ammo
@@ -347,8 +347,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 28
-        Structural: 250
+        Piercing: 14
+        Structural: 125
     armorPenetration: 0.6
   - type: Tracer
     color: "#6f7c82ff"
@@ -366,8 +366,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 7
-        Structural: 40
+        Piercing: 3.5
+        Structural: 20
     armorPenetration: 0.6
   - type: Tracer
     color: "#6f7c82ff"

@@ -122,6 +122,10 @@
   - type: AltFireMelee
     attackType: Light
   # Mono end
+  # Napawlm / ported dual weilding..........!
+  - type: Multishot
+    spreadMultiplier: 3
+    spreadAddition: 40
 
 - type: entity
   id: BaseWeaponBatterySmall

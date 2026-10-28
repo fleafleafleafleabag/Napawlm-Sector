@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 30
+        Piercing: 15
     armorPenetration: 0.15
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Guns/Projectiles/smartgun.rsi

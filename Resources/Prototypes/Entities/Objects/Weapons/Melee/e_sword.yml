@@ -108,9 +108,9 @@
     tags:
     - EnergySword
   - type: Reflect
-    reflectProb: 0.5
+    reflectProb: 0.35
     reflects:
-    - Energy
+    - NonEnergy
   - type: MeleeWeapon
     heavyStaminaCost: 2.5 # goob edit
     wideAnimationRotation: -135
@@ -121,7 +121,7 @@
   - type: ItemToggleMeleeWeapon
     activatedDamage:
       types:
-        Slash: 50
+        Slash: 45
         Structural: 100
 
 - type: entity
@@ -280,14 +280,14 @@
   name: energy cutlass
   parent: BaseMeleeWeaponEnergy
   id: EnergyCutlass
-  description: An exotic energy weapon.
+  description: Yaar har, Fiddle dee dee, being a pirate is already free, do what you want 'cuz a pirate is free, you are a pirate!
   components:
   - type: ItemToggleMeleeWeapon
     activatedDamage:
       types:
         Slash: 15
-        Heat: 20
-        Structural: 15
+        Heat: 15
+        Structural: 100
     deactivatedSecret: true
   - type: Sprite
     sprite: Objects/Weapons/Melee/e_cutlass.rsi
@@ -303,13 +303,13 @@
   - type: Reflect
     reflectProb: 0.5
     reflects:
-    - Energy
+    - NonEnergy
 
 - type: entity
   name: double-bladed energy sword
   parent: BaseMeleeWeaponEnergy
   id: EnergySwordDouble
-  description: A variant of the classic Energy Sword with blades on both ends.
+  description: For the distured and faithless.
   components:
   - type: ItemToggle
     onUse: false # wielding events control it instead
@@ -332,7 +332,7 @@
       types:
         Slash: 15 # Mono increased from 10 to 15 to be on-par with normal e-swords
         Heat: 20
-        Structural: 100 # Mono increased from 25 to 100, keep in mind a breaching hammer does 300 a hit
+        Structural: 300 # Mono increased from 25 to 100, keep in mind a breaching hammer does 300 a hit
   - type: ItemToggleActiveSound
     activeSound:
       path: /Audio/Weapons/ebladehum.ogg
@@ -368,7 +368,7 @@
     size: Small
     sprite: Objects/Weapons/Melee/e_sword_double-inhands.rsi
   - type: Reflect
-    reflectProb: .5
+    reflectProb: .7
     spread: 75
   - type: PirateBountyItem # Mono
     id: TSFEnergyWeapon

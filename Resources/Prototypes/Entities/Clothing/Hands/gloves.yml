@@ -84,7 +84,7 @@
   suffix: Rigged
   components:
   - type: StaminaDamageOnHit
-    damage: 25
+    damage: 40
   - type: MeleeWeapon
     attackRate: 1.4
     damage:

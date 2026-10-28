@@ -53,3 +53,8 @@
   license: "Custom"
   copyright: "Brothers In Arms by Michael Salvatori and Martin O'Donnell. ℗ Microsoft Corporation, utilized under fair use. Converted from MP3 to OGG. "
   source: "https://www.youtube.com/watch?v=o6K1z2neEdo"
+
+- files: ["openarmory.ogg"]
+  license: "CC-BY 3.0"
+  copyright: "Made by Mrjajkes"
+  source: "https://www.youtube.com/watch?v=rOAfRwh5lQo&pp=ygUSbGF3IDIsIG9wZW4gYXJtb3J5"
