@@ -38,10 +38,6 @@
   - type: AltFireMelee
     attackType: Light
   # Mono end
-  # Napawlm / ported dual weilding..........!
-  - type: Multishot
-    spreadMultiplier: 2
-    spreadAddition: 40
 
 - type: entity
   name: PA china lake

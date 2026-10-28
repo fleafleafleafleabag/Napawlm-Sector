@@ -44,7 +44,8 @@ public sealed class ComponentsImplantSystem : EntitySystem
 
     public void OnRemoved(Entity<ComponentsImplantComponent> ent, ref ImplantRemovedEvent args)
     {
-        var target = args.Implanted;  // vega
+        var target = args.Implanted; // ImplantRemovedEvent defines this as non-nullable already
+
         if (ent.Comp.Removed is {} removed)
         {
             foreach (var name in removed.Keys)

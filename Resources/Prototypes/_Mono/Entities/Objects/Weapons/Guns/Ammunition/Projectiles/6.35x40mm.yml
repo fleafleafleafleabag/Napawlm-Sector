@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 11
+        Piercing: 22
     armorPenetration: 0.15
 
 - type: entity
@@ -19,7 +19,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 1
+        Blunt: 2
 
 - type: entity
   id: Bullet635x40mmCaselessRubber
@@ -30,4 +30,4 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 1.5
+        Blunt: 3

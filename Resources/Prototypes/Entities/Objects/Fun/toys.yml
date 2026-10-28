@@ -1181,10 +1181,6 @@
   abstract: true
   components:
   - type: Sprite
-  # Napawlm / ported dual weilding..........!
-  - type: Multishot
-    spreadMultiplier: 1
-    spreadAddition: 20
 
 - type: entity
   parent: ToyGunBase

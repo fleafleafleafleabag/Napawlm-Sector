@@ -10,8 +10,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 37.5
-        Blunt: 5
+        Piercing: 75
+        Blunt: 10
         Structural: 200
     armorPenetration: 0.1
 
@@ -44,10 +44,10 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 10
+        Blunt: 20
     armorPenetration: -0.2
   - type: StaminaDamageOnCollide
-    damage: 47.5
+    damage: 95
 
 - type: entity
   id: Pellet23x75mmBuckshot
@@ -61,7 +61,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 12
+        Piercing: 24
     armorPenetration: -0.2
 
 - type: entity
@@ -86,8 +86,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 7
-        Heat: 3
+        Piercing: 14
+        Heat: 6
     armorPenetration: -0.3
   - type: IgnitionSource
     ignited: true
@@ -114,7 +114,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 1.5
+        Blunt: 3
 
 - type: entity
   id: Pellet23x75mmPracticeSpread
@@ -171,7 +171,7 @@
     deleteOnCollide: false
     damage:
       types:
-        Heat: 5
+        Heat: 10
 
 - type: entity
   id: Pellet23x75mmUranium
@@ -185,8 +185,8 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 5
-        Piercing: 6
+        Radiation: 10
+        Piercing: 12
         Structural: 20
     armorPenetration: -0.05
 
@@ -212,7 +212,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 4
+        Piercing: 8
     armorPenetration: -0.2
 
 - type: entity
@@ -239,7 +239,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 20
+        Piercing: 40
     armorPenetration: -0.5
 
 - type: entity
@@ -264,7 +264,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 80
+        Piercing: 160
         Structural: 250
     armorPenetration: -0.9
 
@@ -281,7 +281,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 20
+        Piercing: 40
         Structural: 250
     armorPenetration: 0.5
   - type: Tracer
@@ -300,8 +300,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 7.5
-        Structural: 20
+        Piercing: 15
+        Structural: 40
     armorPenetration: 0.3
   - type: Tracer
     color: "#6f7c82ff"

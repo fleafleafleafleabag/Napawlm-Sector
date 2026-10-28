@@ -16,19 +16,13 @@ namespace Content.Server.Guardian
         /// Percentage of damage reflected from the guardian to the host
         /// </summary>
         [DataField]
-        public float DamageShare { get; set; } = 0.5f;
+        public float DamageShare { get; set; } = 0.65f;
 
         /// <summary>
-        /// Maximum distance the guardian can travel away from its user, use YAML to set.
+        /// Maximum distance the guardian can travel before it's forced to recall, use YAML to set
         /// </summary>
         [DataField]
-        public float DistanceAllowed { get; set; } = 7f;
-
-        /// <summary>
-        /// When the guardian is farther than this distance, it is automatically recalled.
-        /// </summary>
-        [DataField]
-        public float HardCapDistance { get; set; } = 12f;
+        public float DistanceAllowed { get; set; } = 5f;
 
         /// <summary>
         /// If the guardian is currently manifested

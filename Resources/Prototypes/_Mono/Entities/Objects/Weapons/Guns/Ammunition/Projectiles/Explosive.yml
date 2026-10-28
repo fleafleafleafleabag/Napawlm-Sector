@@ -1,3 +1,4 @@
+
 - type: entity
   id: PanzeroRocket
   name: panzero rocket
@@ -25,4 +26,4 @@
   - type: Projectile
     damage:
       types:
-        Structural: 600
+        Structural: 1200

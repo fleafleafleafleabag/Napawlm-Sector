@@ -83,10 +83,6 @@
   - type: AltFireMelee
     attackType: Light
   # Mono end
-  # Napawlm / ported dual weilding..........!
-  - type: Multishot
-    spreadMultiplier: 3
-    spreadAddition: 40
 
 - type: entity
   name: Garter (.357 magnum)
@@ -140,7 +136,7 @@
   - type: Gun
     selectedMode: Burst
     fireRate: 2
-    burstCooldown: 1
+    burstCooldown: 0.2
     burstFireRate: 10
     shotsPerBurst: 2
     availableModes:
@@ -150,7 +146,7 @@
       path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/python_fire.ogg
       params:
         volume: 2.25
-    damageModifier: 1
+    damageModifier: 1.2
   - type: StaticPrice
     price: 1
 

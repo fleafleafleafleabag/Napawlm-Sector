@@ -7,8 +7,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 10
-        Structural: 10
+        Piercing: 20
+        Structural: 20
     armorPenetration: 0.2
 
 - type: entity
@@ -20,7 +20,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 1
+        Blunt: 2
 
 - type: entity
   id: Bullet45_ACPRubber
@@ -31,7 +31,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 2
+        Blunt: 4
 
 - type: entity
   id: Bullet45_ACPIncendiary
@@ -42,8 +42,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 4
-        Heat: 3.5
+        Piercing: 8
+        Heat: 7
     armorPenetration: -0.1
 
 - type: entity
@@ -55,9 +55,9 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 4.5
-        Piercing: 7.5
-        Structural: 10
+        Radiation: 9
+        Piercing: 15
+        Structural: 20
     armorPenetration: -0.075
 
 # Upstream
@@ -70,7 +70,7 @@
   - type: Projectile
     damage:
       types:
-        Shock: 1
+        Shock: 2
 
 
 # Mono AP syst
@@ -84,8 +84,8 @@
   - type: Projectile
     damage:
       types:
-        Slash: 2
-        Piercing: 16
+        Slash: 4
+        Piercing: 32
     armorPenetration: -0.7
 
 - type: entity
@@ -97,8 +97,8 @@
   - type: Projectile
     damage:
       types:
-        Slash: 3.5
-        Piercing: 21
+        Slash: 7
+        Piercing: 42
     armorPenetration: -0.95
 
 #armor-piercing:
@@ -112,6 +112,6 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 4.5
-        Structural: 15
+        Piercing: 9
+        Structural: 30
     armorPenetration: 0.9

@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 22.5
+        Piercing: 45
     armorPenetration: 0.1
 
 - type: entity
@@ -19,7 +19,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 1.5
+        Blunt: 3
 
 - type: entity
   id: Bullet762x54mmRRubber
@@ -30,7 +30,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 2.5
+        Blunt: 5
 
 - type: entity
   id: Bullet762x54mmRIncendiary
@@ -41,8 +41,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 12.5
-        Heat: 7.5
+        Piercing: 25
+        Heat: 15
 
 - type: entity
   id: Bullet762x54mmRUranium
@@ -53,8 +53,8 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 12.5
-        Piercing: 10
+        Radiation: 25
+        Piercing: 20
 
 # Mono AP syst
 #anti-flesh:
@@ -67,8 +67,8 @@
   - type: Projectile
     damage:
       types:
-        Slash: 2.5
-        Piercing: 22.5
+        Slash: 5
+        Piercing: 45
     armorPenetration: -0.5
 
 - type: entity
@@ -80,8 +80,8 @@
   - type: Projectile
     damage:
       types:
-        Slash: 5
-        Piercing: 30
+        Slash: 10
+        Piercing: 60
     armorPenetration: -0.95
 
 #armor-piercing:
@@ -95,6 +95,6 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 10
+        Piercing: 20
         Structural: 40
     armorPenetration: 0.8

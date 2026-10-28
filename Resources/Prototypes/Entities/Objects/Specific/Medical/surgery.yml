@@ -366,9 +366,9 @@
         Piercing: 10
         Heat: 1
   - type: Cautery
-    speed: 3
+    speed: 1.5
   - type: Drill
-    speed: 3
+    speed: 1.5
   - type: StaticPrice # Mono
     price: 120
 
@@ -399,9 +399,9 @@
         Slash: 10
         Heat: 1
   - type: Scalpel
-    speed: 3
+    speed: 1.5
   - type: BoneSaw
-    speed: 3
+    speed: 1.5
   - type: StaticPrice # Mono
     price: 120
 
@@ -432,18 +432,18 @@
         Slash: 6.5
         Heat: 1
   - type: Hemostat
-    speed: 3
+    speed: 1.5
   - type: Retractor
-    speed: 3
+    speed: 1.5
   - type: Tweezers
-    speed: 3
+    speed: 1.5
   - type: Tending
-    speed: 3
+    speed: 1.5
   - type: StaticPrice # Mono
     price: 120
 
 - type: entity
-  name: medical omnitool
+  name: medical multitool
   id: OmnimedTool
   parent: BaseToolSurgery
   components:
@@ -481,28 +481,7 @@
 - type: entity
   parent: OmnimedTool
   id: OmnimedToolSyndie
-  name: dark surgical omnitool
   components:
-  - type: Hemostat
-    speed: 3
-  - type: Scalpel
-    speed: 3
-  - type: Drill
-    speed: 3
-  - type: BoneSetter
-    speed: 3
-  - type: Retractor
-    speed: 3
-  - type: Cautery
-    speed: 3
-  - type: BoneGel
-    speed: 3
-  - type: BoneSaw
-    speed: 3
-  - type: Tweezers
-    speed: 3
-  - type: Tending
-    speed: 3
   - type: Sprite
     state: evil
   - type: Item

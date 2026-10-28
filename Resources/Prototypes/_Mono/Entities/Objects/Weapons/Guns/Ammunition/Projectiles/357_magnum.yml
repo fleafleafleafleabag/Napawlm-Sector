@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 17.5
+        Piercing: 35
     armorPenetration: 0.1
 
 - type: entity
@@ -19,7 +19,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 0.5
+        Blunt: 1
 
 - type: entity
   id: Bullet357_magnumRubber
@@ -30,9 +30,9 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 1.5
+        Blunt: 3
   - type: StaminaDamageOnCollide
-    damage: 17.5 # 3 hits to stun cuz revolver
+    damage: 35 # 3 hits to stun cuz revolver
 
 - type: entity
   id: Bullet357_magnumIncendiary
@@ -43,8 +43,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 10
-        Heat: 5
+        Piercing: 20
+        Heat: 10
 
 - type: entity
   id: Bullet357_magnumAP
@@ -55,7 +55,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 13 # 20% decrease
+        Piercing: 26 # 20% decrease
     ignoreResistances: true
 
 - type: entity
@@ -67,8 +67,8 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 7.5
-        Piercing: 10
+        Radiation: 15
+        Piercing: 20
 
 # Mono AP syst
 # + 0.05 base AP
@@ -82,8 +82,8 @@
   - type: Projectile
     damage:
       types:
-        Slash: 4
-        Piercing: 18.5
+        Slash: 8
+        Piercing: 37
     armorPenetration: -0.5
 
 - type: entity
@@ -95,8 +95,8 @@
   - type: Projectile
     damage:
       types:
-        Slash: 5
-        Piercing: 25
+        Slash: 10
+        Piercing: 50
     armorPenetration: -0.9
 
 #armor-piercing:
@@ -109,6 +109,6 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 10
+        Piercing: 20
         Structural: 70
     armorPenetration: 0.6

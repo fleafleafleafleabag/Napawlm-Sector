@@ -562,8 +562,6 @@
       collection: Salutes
     Crack: # Imp
       collection: Cracks # Imp
-    Blink:
-      collection: Blinks # Imp
 
 - type: emoteSounds
   id: DionaBodyEmotes

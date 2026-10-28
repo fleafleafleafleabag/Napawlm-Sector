@@ -20,25 +20,24 @@
 # TODO: Second level upgrade sometime that allows swapping with all objects
 - type: entity
   id: ActionVoidApplause
-  name: BloodLine Clap
-  description: Clap your hands, relish Haeori's love and swap places with the target.
+  name: Void Applause
+  description: Clap your hands and swap places with the target.
   components:
   - type: EntityTargetAction
-    useDelay: 5
+    useDelay: 15
     range: 16
     sound: !type:SoundPathSpecifier
-      path: /Audio/_Napawlm/Magic/Brother/boogiewoogie.ogg
+      path: /Audio/Magic/Eldritch/voidblink.ogg
     itemIconStyle: BigAction
     whitelist:
       components:
       - Body
-      - Guardian #hehehehe
     canTargetSelf: false
     interactOnMiss: false
     checkCanAccess: false
     repeat: false
     icon:
-      sprite: Objects/Specific/Medical/medical.rsi
-      state: bloodpack
+      sprite: Objects/Magic/Eldritch/eldritch_actions.rsi
+      state: voidblink
     event: !type:VoidApplauseSpellEvent
       effect: EffectVoidBlink

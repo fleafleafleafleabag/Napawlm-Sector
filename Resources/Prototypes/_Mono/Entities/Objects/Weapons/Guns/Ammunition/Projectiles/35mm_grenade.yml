@@ -19,5 +19,5 @@
     damage:
       types:
         Structural: 100
-        Piercing: 22.5
+        Piercing: 45
     armorPenetration: 0.1

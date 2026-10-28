@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 13.75
+        Piercing: 27.5
     armorPenetration: 0.65
 
 - type: entity
@@ -19,7 +19,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 1.5
+        Blunt: 3
 
 - type: entity
   id: Bullet8x65mmSKRIncendiary
@@ -30,6 +30,6 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 7.5
-        Heat: 5
+        Piercing: 15
+        Heat: 10
     armorPenetration: 0.65

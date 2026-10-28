@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 12
+        Piercing: 24
     armorPenetration: 0.05
 
 - type: entity
@@ -19,7 +19,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 1
+        Blunt: 2
 
 - type: entity
   id: Bullet9x19mmRubber
@@ -30,7 +30,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 1.5
+        Blunt: 3
 
 - type: entity
   id: Bullet9x19mmIncendiary
@@ -41,8 +41,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 5
-        Heat: 2.5
+        Piercing: 10
+        Heat: 5
     armorPenetration: -0.15
 
 - type: entity
@@ -54,8 +54,8 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 4
-        Piercing: 6.5
+        Radiation: 8
+        Piercing: 13
     armorPenetration: -0.1
 
 # Upstream
@@ -81,8 +81,8 @@
   - type: Projectile
     damage:
       types:
-        Slash: 1.5
-        Piercing: 13
+        Slash: 3
+        Piercing: 26
     armorPenetration: -0.6
 
 - type: entity
@@ -94,8 +94,8 @@
   - type: Projectile
     damage:
       types:
-        Slash: 2.5
-        Piercing: 17.5
+        Slash: 5
+        Piercing: 35
     armorPenetration: -0.95
 
 #armor-piercing:
@@ -109,6 +109,6 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 3.5
+        Piercing: 7
         Structural: 25
     armorPenetration: 0.9
