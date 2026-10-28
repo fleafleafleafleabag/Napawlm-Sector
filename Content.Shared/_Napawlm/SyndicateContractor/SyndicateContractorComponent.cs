@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
-namespace Content.Shared._NapawlmSyndicateContractor;
+namespace Content.Shared._Napawlm.SyndicateContractor;
 
 /// <summary>
 /// Marks an entity as a Syndicate contractor. Contractors hand out contracts,
