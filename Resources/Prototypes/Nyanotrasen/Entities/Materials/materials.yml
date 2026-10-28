@@ -28,6 +28,8 @@
     count: 5
   - type: Item
     size: Tiny
+  - type: StealTarget
+    stealGroup: BluespaceCrystalSteal
 
 - type: entity
   parent: MaterialBluespace

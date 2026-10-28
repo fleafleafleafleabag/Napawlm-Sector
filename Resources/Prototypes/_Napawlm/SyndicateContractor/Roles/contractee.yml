@@ -1,0 +1,9 @@
+- type: antag
+  id: TraitorContractee
+  name: Contractee
+  objective: Do your job.
+  antagonist: true
+  setPreference: false
+  objectiveGroups: []
+  components:
+  - type: TraitorRole

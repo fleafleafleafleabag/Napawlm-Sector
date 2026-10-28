@@ -8,3 +8,16 @@
     Telecrystal: 65
   categories:
   - UplinkWeaponry
+
+- type: listing
+  id: UplinkSyndicateContractBundle
+  name: uplink-contract-bundle-name
+  description: uplink-contract-bundle-desc
+  icon:
+    sprite: Objects/Misc/bureaucracy.rsi
+    state: syndicate_card
+  productEntity: SyndicateContractBundle
+  cost:
+    Telecrystal: 15
+  categories:
+  - UplinkJob

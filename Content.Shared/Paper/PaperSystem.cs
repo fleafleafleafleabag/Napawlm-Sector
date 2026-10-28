@@ -342,49 +342,41 @@ public sealed partial class PaperSystem : EntitySystem
     }
 
     // FRONTIER - TrySign method, attempts to place a signature
+    // NAPAWLM - added cancellability for contractor
     public bool TrySign(Entity<PaperComponent> paper, EntityUid signer, EntityUid pen)
     {
         if (!TryComp<StampComponent>(pen, out var stamp))
             return false;
 
-        // Generate display information.
+        var attemptEv = new BeingSignedAttemptEvent(paper.Owner, signer, pen);
+        RaiseLocalEvent(paper.Owner, ref attemptEv);
+        if (attemptEv.Cancelled)
+        {
+            if (attemptEv.FailReason != null)
+                _popupSystem.PopupClient(Loc.GetString(attemptEv.FailReason), paper.Owner, signer);
+            return false;
+        }
+
         var info = GetStampInfo(stamp);
         info.Type = StampType.Signature;
         info.StampedName = Name(signer);
-
-        // Try stamp with the info, return false if failed.
         if (!StampDelayed(pen) && TryStamp(paper, info, "paper_stamp-nf-signature"))
         {
-            // Signing successful, popup time.
+            var successEv = new SignSuccessfulEvent(paper.Owner, signer, pen);
+            RaiseLocalEvent(paper.Owner, ref successEv);
             _popupSystem.PopupEntity(
-                Loc.GetString(
-                    "paper-component-action-signed-other",
-                    ("user", signer),
-                    ("target", paper.Owner)
-                ),
-                signer,
-                Filter.PvsExcept(signer, entityManager: EntityManager),
-                true
-            );
-
+                Loc.GetString("paper-component-action-signed-other", ("user", signer), ("target", paper.Owner)),
+                                     signer, Filter.PvsExcept(signer, entityManager: EntityManager), true);
             _popupSystem.PopupClient(
-                Loc.GetString(
-                    "paper-component-action-signed-self",
-                    ("target", paper.Owner)
-                ),
-                signer,
-                signer
-            );
+                Loc.GetString("paper-component-action-signed-self", ("target", paper.Owner)),
+                                     signer, signer);
 
             _audio.PlayPredicted(paper.Comp.Sound, paper, signer);
-
             _adminLogger.Add(LogType.Verb, LogImpact.Low,
-                $"{ToPrettyString(signer):player} has signed {ToPrettyString(paper):paper}.");
+                             $"{ToPrettyString(signer):player} has signed {ToPrettyString(paper):paper}.");
 
             UpdateUserInterface(paper);
-
-            DelayStamp(pen); // prevent stamp spam
-
+            DelayStamp(pen);
             return true;
         }
 

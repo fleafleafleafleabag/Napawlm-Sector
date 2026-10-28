@@ -14,6 +14,17 @@
         - id: Magazine46x30mmPistolFMJ
         - id: Magazine46x30mmPistolFMJ
 
+- type: entity
+  parent: BriefcaseSyndiePaw
+  id: SyndicateContractBundle
+  description: A sealed bundle of blank Syndicate contracts. Each one binds a soul when signed.
+  suffix: Contractor
+  components:
+  - type: StorageFill
+    contents:
+    - id: PaperSyndicateContract
+      amount: 5
+
 # hell
 - type: entity
   id: BriefcaseLawyerSet

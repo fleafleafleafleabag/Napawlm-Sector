@@ -1,0 +1,7 @@
+- type: stealTargetGroup
+  id: BluespaceCrystalSteal
+  name: bluespace crystal
+  description: bluespace crystal
+  sprite:
+    sprite: Nyanotrasen/Objects/Materials/materials.rsi
+    state: bluespace_3

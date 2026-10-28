@@ -1,0 +1,127 @@
+- type: entity
+  name: paper
+  parent: BaseItem
+  id: PaperSyndicateContract
+  description: 'A piece of white paper.'
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    layers:
+    - state: paper
+    - state: paper_words
+      map: ["enum.PaperVisualLayers.Writing"]
+      visible: false
+    - state: paper_stamp-generic
+      map: ["enum.PaperVisualLayers.Stamp"]
+      visible: false
+  - type: Paper
+    content: |2
+
+                                              [color=#ff0000]╔══[/color][color=#68cf42]═══[/color][color=#ff0000]════════[/color][color=#68cf42]════[/color][color=#ff0000]═╗[/color]
+                                              [color=#ff0000]║░░[/color][color=#68cf42]░░░[/color][color=#ff0000]████████[/color][color=#68cf42]░░░[/color][color=#ff0000]░░║[/color]
+                                              [color=#ff0000]║░░[/color][color=#68cf42]░░░[/color][color=#ff0000]██░░░░░░[/color][color=#68cf42]░░░[/color][color=#ff0000]░░║[/color]
+                                              [color=#ff0000]║░░[/color][color=#68cf42]░░░[/color][color=#ff0000]████████[/color][color=#68cf42]░░░[/color][color=#ff0000]░░║[/color]
+                                              [color=#ff0000]║░░[/color][color=#68cf42]░░░[/color][color=#ff0000]░░░░░░██[/color][color=#68cf42]░░░[/color][color=#ff0000]░░║[/color]
+                                              [color=#ff0000]║░░[/color][color=#68cf42]░░░[/color][color=#ff0000]████████[/color][color=#68cf42]░░░[/color][color=#ff0000]░░║[/color]
+                                              [color=#ff0000]╚══[/color][color=#68cf42]═══[/color][color=#ff0000]════════[/color][color=#68cf42]════[/color][color=#ff0000]═╝[/color]
+
+                                            [color=#ff0000][head=2]SYNDICATE CONTRACT [/head][/color]
+        [color=#ff0000]─────────────────────────────────────────────────────[/color]
+
+        [color=#888888][small][italic]This contract "the Contract" details the responsibilities of ___________ (the "Contractor" Party), on behalf of the Syndicate (the "Syndicate" party), the entity handing out the contract, and the clauses of (the "Contractee" Party), the entity signing the contract, in the case that either of these parties fail in their clauses and or responsibilities, the contract is null and action can be taken from either party to the other.[/italic][/small][/color]
+        The Syndicate, Contractee and Contractor party agree to their respective clauses as follows:
+
+                                          [color=#ff0000][bold]1. Objectives[/bold][/color]
+
+        "Objectives" Are the multiple tasks that will be instantly delivered via encephaloelectrical waves to the Contractee party by the Contractor and Syndicate party upon signing the contract, these are to be reasonably attempted to be completed [bold]by any means necessary[/bold], including but not limited to: assasination, burglary, suicide.
+
+        Contractor party is legally obligated to give and suffice reasonable equipment for the Objective, at the Contractee's request, if its requested for no equipment, it is not required that the Contractor party suffice equipment, in the case of "Suicide" being an Objective given to the Contractee party, neither the Contractee party nor the Contractor party are allowed to kill the Contractee party, and instead a third party is to kill the Contractee party.
+
+        If the objectives are successfully completed or achieved, a [bold]reasonable reward[/bold] should be handed by the Contractor party or the Syndicate party respectively, rewards may vary between objectives, and in the case of a "Suicide" objective, the reward will be given [bold]after the Contractee party's death, in the afterlife[/bold], the rewards must be kept [bold]consistent across objectives and Contractee parties[/bold].
+
+                                          [color=#ff0000][bold]2. Confidential Information[/bold][/color]
+
+        "Confidential Information" is proprietary secret information contained within and relating to Contractor and Syndicate Party's plan including but not limited to: business description, engagement plans, the Contract itself, the Objectives given by the Contract, supporting documents and information conveyed in writing or in discussion that is indicated to be confidential.
+
+                                          [color=#ff0000][bold]3. Non-Disclosure[/bold][/color]
+
+        Contractee Party will treat Confidential Information with the same degree of care and safeguards as a reasonable degree of care. Without the Contractor or The Syndicate Party's prior written or spoken consent, Contractee Party will not: (a)  disclose Confidential Information to any third party [italic]UNLESS[/italic] the Third party has been contracted by the Contractor party or Syndicate party or; (b) make any commercial use of Confidential Information.
+
+        The Non-Disclosure does not apply to any information that: (a)  was in Contractee Party's possession or was known to Contractee Party, without an obligation to keep it confidential, before such information was disclosed to Contractee Party by Contractor or Syndicate Party; (b)  is or becomes public knowledge through a source other than Contractee Party and through no fault of Contractee Party; (c)  is or becomes lawfully available to Contractee Party from a source other than Contractor or Syndicate Party; or (d)  is disclosed by Contractee Party with Contractor or Syndicate Party's prior written approval.
+
+                                          [color=#ff0000][bold]4. Term[/bold][/color]
+
+        This Contract and Contractee Party's duty to hold Confidential Information in confidence shall remain in effect until the Monolithic Emission or until whichever of the following occurs first: (a)  Contractor or Syndicate Party sends Contractor Party written notice releasing it from this Contract, or (b)  Confidential Information disclosed under this Contract ceases to be a secret.
+
+                                          [color=#ff0000][bold]5. "Soul" Ownership[/bold][/color]
+
+        This contract declares that upon the Contractee party signing it, they designate their spiritual entity, "Soul" and its ownership to the Syndicate and the group that it represents, efforts to take the soul will not be taken at any point by the Syndicate or Contractor party while the Contractee party is alive.
+
+                                          [color=#ff0000][bold]6. Contract Breach[/bold][/color]
+
+        If this contract is ever to have its clauses such as Objectives, Non-Disclosure, Term, or "Soul" Ownership breached by either Contractor, Contractee or Syndicate party, Any other party than the Contractor party should take action on top of taking the contract as void for all parties involved, which includes but is not limited to what's declared below:
+
+        [color=#888888][small][italic]Syndicate party may Assasinate, Prevent Revival, Cyborgify, Surgically remove organs and/or limbs, Take Credits, Vessels, Items, Kidnap, Execute, Obliterate, Encarcerate, Torture, Vaporize, Emancipate, Dehydrate, Starve, Electrocute, Explode Any parties that are found to have breached the contract, unless the Contractee or Contractor party had attempted to handle the Breach of Contract on their own.[/italic][/small][/color]
+
+        Contractor and Contractee Party may communicate to the Syndicate Party and let them handle the Breach of Contract.
+
+
+        [color=#888888][small][italic]The Syndicate and Contractor party are not responsible for any detriments or damages done to third parties or the Contractee party as part of their Objective.[/italic][/small][/color]
+
+        [color=#ff0000][bold]The Contractee party agrees to all of the above once signed:[/bold][/color]
+
+        [color=#ff0000][bold][head=3]SIGN BELOW[/head][/bold][/color]
+        [color=#ff0000]─────────────────────────[/color]
+
+    contentSize: 10000
+  - type: PaperLabelType
+  - type: ActivatableUI
+    key: enum.PaperUiKey.Key
+    requiresComplex: false
+  - type: UserInterface
+    interfaces:
+      enum.PaperUiKey.Key:
+        type: PaperBoundUserInterface
+  - type: Item
+    size: Tiny
+  # Goobstation edit start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Goobstation/Items/handling/paper_pickup.ogg
+      params:
+        volume: -6
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Goobstation/Items/handling/paper_drop.ogg
+      params:
+        volume: -6
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_Goobstation/Items/handling/paper_use.ogg
+      params:
+        volume: -6
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/_Goobstation/Items/handling/paper_drop.ogg
+      params:
+        volume: -6
+  - type: EmitSoundOnThrow
+    sound:
+      path: /Audio/_Goobstation/Items/handling/paper_throw.ogg
+      params:
+        volume: -6
+  # Goobstation edit end
+  - type: Tag
+    tags:
+    - Document
+    - Paper
+  - type: Appearance
+  - type: FaxableObject
+  - type: PaperVisuals
+  - type: SyndicateContractorContract
+    objectiveCount: 1
+    objectivePool:
+    - objective: SyndicateContractorObjectiveMaterialBluespace
+      payoutPrototype: Telecrystal50
+      payoutAmount: 1
+      weight: 1.0
