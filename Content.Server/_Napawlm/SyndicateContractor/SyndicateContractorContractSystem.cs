@@ -183,7 +183,7 @@ public sealed class SyndicateContractorContractSystem : EntitySystem
             if (!_mind.TryAddObjective(mindId, mind, entry.Objective))
                 continue;
 
-                added++;
+            added++;
             contract.AssignedObjectives.Add(new AssignedContractObjective
             {
                 ObjectiveUid = mind.Objectives[^1],
@@ -243,7 +243,6 @@ public sealed class SyndicateContractorContractSystem : EntitySystem
                 var spawned = Spawn(obj.PayoutPrototype, coords);
                 _hands.TryPickupAnyHand(contractor, spawned, false, false, false);
             }
-        }
         }
 
         RemoveContractObjectives(contract);

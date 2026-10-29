@@ -17,13 +17,13 @@
   - type: Paper
     content: |2
 
-                                              [color=#ff0000]╔══[/color][color=#68cf42]═══[/color][color=#ff0000]════════[/color][color=#68cf42]════[/color][color=#ff0000]═╗[/color]
+                                              [color=#ff0000]╔══[/color][color=#68cf42]═══[/color][color=#ff0000]════════[/color][color=#68cf42]═══[/color][color=#ff0000]══╗[/color]
                                               [color=#ff0000]║░░[/color][color=#68cf42]░░░[/color][color=#ff0000]████████[/color][color=#68cf42]░░░[/color][color=#ff0000]░░║[/color]
                                               [color=#ff0000]║░░[/color][color=#68cf42]░░░[/color][color=#ff0000]██░░░░░░[/color][color=#68cf42]░░░[/color][color=#ff0000]░░║[/color]
                                               [color=#ff0000]║░░[/color][color=#68cf42]░░░[/color][color=#ff0000]████████[/color][color=#68cf42]░░░[/color][color=#ff0000]░░║[/color]
                                               [color=#ff0000]║░░[/color][color=#68cf42]░░░[/color][color=#ff0000]░░░░░░██[/color][color=#68cf42]░░░[/color][color=#ff0000]░░║[/color]
                                               [color=#ff0000]║░░[/color][color=#68cf42]░░░[/color][color=#ff0000]████████[/color][color=#68cf42]░░░[/color][color=#ff0000]░░║[/color]
-                                              [color=#ff0000]╚══[/color][color=#68cf42]═══[/color][color=#ff0000]════════[/color][color=#68cf42]════[/color][color=#ff0000]═╝[/color]
+                                              [color=#ff0000]╚══[/color][color=#68cf42]═══[/color][color=#ff0000]════════[/color][color=#68cf42]═══[/color][color=#ff0000]══╝[/color]
 
                                             [color=#ff0000][head=2]SYNDICATE CONTRACT [/head][/color]
         [color=#ff0000]─────────────────────────────────────────────────────[/color]
@@ -134,13 +134,13 @@
       payoutAmount: 1
       weight: 0.2
     - objective: IDCardsStealCollectionObjective
-      payoutPrototype: Telecrystal50
-      payoutAmount: 1
-      weight: 0.3
+       payoutPrototype: Telecrystal50
+       payoutAmount: 1
+       weight: 0.3
     - objective: DieObjective
-      payoutPrototype: Telecrystal
-      payoutAmount: 1
-      weight: 0.1 # basically go nuts 3000 objective
+       payoutPrototype: Telecrystal
+       payoutAmount: 1
+       weight: 0.1 # basically go nuts 3000 objective
     - objective: SyndicateContractorObjectiveContrabandPoster
       payoutPrototype: Telecrystal25
       payoutAmount: 1
