@@ -25,3 +25,22 @@
       state: bluespace_3
   - type: StealCondition
     stealGroup: BluespaceCrystalSteal
+
+- type: entity
+  parent: [ BaseTraitorObjective]
+  id: SyndicateContractorObjectiveContrabandPoster
+  name: Put up contraband posters
+  description: The station is far too clean of our influence. Fix that.
+  components:
+  - type: Objective
+    difficulty: 1.0
+    unique: true
+    icon:
+      sprite: Structures/Wallmounts/posters.rsi
+      state: poster4_contraband
+  - type: NumberObjective
+    min: 6
+    max: 11
+    title: objective-condition-contraband-poster-title
+    description: objective-condition-contraband-poster-description
+  - type: ContrabandPosterCondition

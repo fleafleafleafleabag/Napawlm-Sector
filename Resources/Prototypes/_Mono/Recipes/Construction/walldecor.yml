@@ -29,3 +29,19 @@
   canBuildInImpassable: true
   conditions:
     - !type:WallmountCondition
+
+- type: construction #Napawlm
+  id: RandomContrabandPoster
+  name: random contraband poster
+  description: The thinking dissident's solution for a damaged hull.
+  graph: RandomContrabandPoster
+  startNode: start
+  targetNode: randomContrabandPoster
+  category: construction-category-furniture
+  icon:
+    sprite: Structures/Wallmounts/posters.rsi
+    state: poster5_contraband
+  placementMode: SnapgridCenter
+  canBuildInImpassable: true
+  conditions:
+    - !type:WallmountCondition

@@ -121,7 +121,27 @@
   - type: SyndicateContractorContract
     objectiveCount: 1
     objectivePool:
-    - objective: SyndicateContractorObjectiveMaterialBluespace
+    - objective: KillRandomPersonObjective
       payoutPrototype: Telecrystal50
+      payoutAmount: 1
+      weight: 1
+    - objective: StampStealCollectionObjective
+      payoutPrototype: Telecrystal25
+      payoutAmount: 1
+      weight: 0.2
+    - objective: TechnologyDiskStealCollectionObjective
+      payoutPrototype: Telecrystal25
+      payoutAmount: 1
+      weight: 0.2
+    - objective: IDCardsStealCollectionObjective
+      payoutPrototype: Telecrystal50
+      payoutAmount: 1
+      weight: 0.3
+    - objective: DieObjective
+      payoutPrototype: Telecrystal
+      payoutAmount: 1
+      weight: 0.1 # basically go nuts 3000 objective
+    - objective: SyndicateContractorObjectiveContrabandPoster
+      payoutPrototype: Telecrystal25
       payoutAmount: 1
       weight: 1.0

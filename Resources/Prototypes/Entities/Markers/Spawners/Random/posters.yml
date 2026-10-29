@@ -185,3 +185,22 @@
       - NFPosterLegitHaveYouSeenThisEgg
         # Frontier: Ending
     chance: 1
+
+- type: entity #Napawlm
+  parent: MarkerBase
+  id: RandomContrabandPosterConstructed
+  name: random contraband poster
+  suffix: Constructed
+  components:
+  - type: Sprite
+    layers:
+      - sprite: Structures/Wallmounts/posters.rsi
+        state: poster5_contraband
+  - type: RandomSpawner
+    offset: 0
+    prototypes:
+      - RandomPosterContraband
+    chance: 1.0
+  - type: Construction
+    graph: RandomContrabandPoster
+    node: randomContrabandPoster

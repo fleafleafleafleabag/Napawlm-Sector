@@ -51,10 +51,9 @@ public sealed class SyndicateContractorContractSystem : EntitySystem
     {
         var contract = ent.Comp;
 
-        // Contractors don't actually sign — they "claim" with the pen.
         if (HasComp<SyndicateContractorComponent>(args.Signer))
         {
-            args.Cancelled = true; // never add a signature stamp for them
+            args.Cancelled = true;
             TryClaimFromPen(ent, args.Signer);
             return;
         }
@@ -158,7 +157,6 @@ public sealed class SyndicateContractorContractSystem : EntitySystem
     private void AddContractObjectives(EntityUid mindId, MindComponent mind,
                                        SyndicateContractorContractComponent contract)
     {
-        // Fallback: pool empty → build a one-entry pool from the legacy fields.
         List<ContractObjectiveEntry> pool;
         if (contract.ObjectivePool.Count > 0)
             pool = new List<ContractObjectiveEntry>(contract.ObjectivePool);
@@ -183,7 +181,7 @@ public sealed class SyndicateContractorContractSystem : EntitySystem
             pool.Remove(entry);
 
             if (!_mind.TryAddObjective(mindId, mind, entry.Objective))
-                continue;  // target picking failed / role mismatch / limit reached
+                continue;
 
                 added++;
             contract.AssignedObjectives.Add(new AssignedContractObjective
@@ -246,7 +244,9 @@ public sealed class SyndicateContractorContractSystem : EntitySystem
                 _hands.TryPickupAnyHand(contractor, spawned, false, false, false);
             }
         }
+        }
 
+        RemoveContractObjectives(contract);
         Spawn("Ash", coords);
         QueueDel(ent);
 
@@ -254,7 +254,22 @@ public sealed class SyndicateContractorContractSystem : EntitySystem
         _audio.PlayPvs(new SoundCollectionSpecifier("Fire"), coords);
     }
 
-    // lookie
+    private void RemoveContractObjectives(SyndicateContractorContractComponent contract)
+    {
+        if (contract.Signer == null)
+            return;
+
+        if (!_mind.TryGetMind(contract.Signer.Value, out var mindId, out var mind))
+            return;
+
+        foreach (var obj in contract.AssignedObjectives)
+        {
+            var index = mind.Objectives.IndexOf(obj.ObjectiveUid);
+            if (index >= 0)
+                _mind.TryRemoveObjective(mindId, mind, index);
+        }
+    }
+
 
     private void OnExamined(Entity<SyndicateContractorContractComponent> ent, ref ExaminedEvent args)
     {

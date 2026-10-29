@@ -47,3 +47,19 @@
     
   - node: finishedPainting #Used to make paintings break into empty frames
     entity: PaintingBase
+
+- type: constructionGraph # Napawlm
+  id: RandomContrabandPoster
+  start: start
+  graph:
+  - node: start
+    edges:
+      - to: randomContrabandPoster
+        steps:
+        - material: Paper
+          amount: 12
+          doAfter: 1
+        completed:
+        - !type:NotifyContrabandPosterBuilt
+  - node: randomContrabandPoster
+    entity: RandomContrabandPosterConstructed
