@@ -40,6 +40,8 @@
   - type: StaticPrice
     price: 1400
     vendPrice: 10000
+  - type: StealTarget
+    stealGroup: ClothingOuterHardsuitTrauma
 
 - type: entity
   parent: ClothingOuterHardsuitBase
@@ -84,3 +86,5 @@
   - type: StaticPrice
     price: 4200
     vendPrice: 25000
+  - type: StealTarget
+    stealGroup: ClothingOuterHardsuitTraumaLeader

@@ -13,6 +13,8 @@
     sprite: Objects/Devices/encryption_keys.rsi
   - type: StaticPrice # Frontier
     price: 2 # Frontier
+  - type: StealTarget
+    stealGroup: EncryptionKeySteal # Napawlm
 
 - type: entity
   parent: [EncryptionKey, RecyclableItemDeviceTiny] # Frontier: added RecyclableItemDeviceTiny

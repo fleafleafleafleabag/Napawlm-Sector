@@ -30,7 +30,7 @@
   parent: [ BaseTraitorObjective]
   id: SyndicateContractorObjectiveContrabandPoster
   name: Put up contraband posters
-  description: The station is far too clean of our influence. Fix that.
+  description: Our psyop has been running weak lately, put up some contraband posters to fix that.
   components:
   - type: Objective
     difficulty: 1.0
@@ -42,5 +42,59 @@
     min: 6
     max: 11
     title: objective-condition-contraband-poster-title
-    description: objective-condition-contraband-poster-description
+    description: objective-condition-contraband-poster-desc
   - type: ContrabandPosterCondition
+
+- type: entity
+  parent: [ BaseTraitorObjective, BaseTraitorStealObjective ]
+  id: SyndicateContractorObjectiveClothingOuterHardsuitTrauma
+  name: Steal the ATU's T-23 hardsuit
+  description: Fuck them. we can do way better.
+  components:
+  - type: Objective
+    difficulty: 1
+    unique: true
+    icon:
+      sprite: _Mono/Clothing/OuterClothing/Hardsuits/trauma.rsi
+      state: icon
+  - type: StealCondition
+    stealGroup: ClothingOuterHardsuitTrauma
+    objectiveNoOwnerText: syndicate-objective-trauma-hardsuit
+    descriptionText: syndicate-objective-trauma-hardsuit-desc
+
+- type: entity
+  parent: [ BaseTraitorObjective, BaseTraitorStealObjective ]
+  id: SyndicateContractorObjectiveClothingOuterHardsuitTraumaLeader
+  name: Steal the ATU's T-53 hardsuit
+  description: Fuck them. we can do way better.
+  components:
+  - type: Objective
+    difficulty: 2.5
+    unique: true
+    icon:
+      sprite: _Mono/Clothing/OuterClothing/Hardsuits/trauma_leader.rsi
+      state: icon
+  - type: StealCondition
+    stealGroup: ClothingOuterHardsuitTraumaLeader
+    objectiveNoOwnerText: syndicate-objective-trauma-leader-hardsuit
+    descriptionText: syndicate-objective-trauma-leader-hardsuit-desc
+
+- type: entity
+  parent: [ BaseTraitorObjective, BaseTraitorStealObjective ]
+  id: SyndicateContractorObjectiveEncryptionKey
+  name: Get some encryption keys
+  description: Discombobulate. make them unable to hear you coming.
+  components:
+  - type: Objective
+    difficulty: 0.7
+    unique: true
+    icon:
+      sprite: Objects/Devices/encryption_keys.rsi
+      state: crypt_red
+  - type: StealCondition
+    minCollectionSize: 3
+    maxCollectionSize: 11
+    objectiveNoOwnerText: syndicate-objective-encryption-keys
+    descriptionText: syndicate-objective-encryption-keys-desc
+    descriptionMultiplyText: syndicate-objective-encryption-keys-desc-mult
+    stealGroup: EncryptionKeySteal

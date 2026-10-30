@@ -5,3 +5,27 @@
   sprite:
     sprite: Nyanotrasen/Objects/Materials/materials.rsi
     state: bluespace_3
+
+- type: stealTargetGroup
+  id: ClothingOuterHardsuitTrauma
+  name: armed trauma unit T-23 tacsuit
+  description: armed trauma unit T-23 tacsuit
+  sprite:
+    sprite: _Mono/Clothing/OuterClothing/Hardsuits/trauma.rsi
+    state: icon
+
+- type: stealTargetGroup
+  id: ClothingOuterHardsuitTraumaLeader
+  name: armed trauma unit T-53 tacsuit
+  description: armed trauma unit T-53 tacsuit
+  sprite:
+    sprite: _Mono/Clothing/OuterClothing/Hardsuits/trauma_leader.rsi
+    state: icon
+
+- type: stealTargetGroup
+  id: EncryptionKeySteal
+  name: Encryption Key
+  description: Encryption Key
+  sprite:
+    sprite: Objects/Devices/encryption_keys.rsi
+    state: crypt_red

@@ -44,7 +44,7 @@
   parent: BaseAutosurgeonSyndicate
   id: AutosurgeonBlackFlashSyndie
   name: autosurgeon (syndicate redspace heart)
-  description: Replaces your heart with the redspace heart, makes your opponents think before they even get up
+  description: Replaces your heart with the redspace heart, maybe once you open it.
   components:
   - type: AutoSurgeon
     targetBodyPart: Torso
@@ -64,3 +64,58 @@
   - type: Sprite
     layers:
     - state: medical_lathe
+
+- type: entity
+  parent: BaseNFFlatpack
+  id: AutosurgeonRightGunnerArmSyndicateFlatpack
+  name: Syndicate autosurgeon (right gunner arm) flatpack
+  description: A flatpack used for constructing a Syndicate autosurgeon.
+  components:
+  - type: Flatpack
+    entity: AutosurgeonRightPistolEchis
+  - type: StaticPrice
+    price: 50000
+  - type: Sprite
+    layers:
+    - state: medical_lathe
+
+- type: entity
+  parent: BaseNFFlatpack
+  id: AutosurgeonLefttGunnerArmSyndicateFlatpack
+  name: Syndicate autosurgeon (left gunner arm) flatpack
+  description: A flatpack used for constructing a Syndicate autosurgeon.
+  components:
+  - type: Flatpack
+    entity: AutosurgeonLeftPistolCobra
+  - type: StaticPrice
+    price: 50000
+  - type: Sprite
+    layers:
+    - state: medical_lathe
+
+- type: entity
+  parent: BaseAutosurgeonSyndicate
+  id: AutosurgeonRightPistolEchis
+  name: syndicate autosurgeon (right gunner arm)
+  components:
+  - type: AutoSurgeon
+    targetBodyPart: Arm
+    targetBodyPartSymmetry: Right
+    componentsToPart:
+    - type: MantisBladeArm
+      bladeProto: WeaponPistolEchis
+      actionProto: ActionToggleRightGunnerArm
+
+- type: entity
+  parent: BaseAutosurgeonSyndicate
+  id: AutosurgeonLeftPistolCobra
+  name: syndicate autosurgeon (left gunner arm)
+  description: A single-use autosurgeon for replacing or upgrading your parts with cybernetic implants. This specific model of the gunner arm actually doesnt self-recharge, sadly.
+  components:
+  - type: AutoSurgeon
+    targetBodyPart: Arm
+    targetBodyPartSymmetry: Left
+    componentsToPart:
+    - type: MantisBladeArm
+      bladeProto: WeaponPistolCobra
+      actionProto: ActionToggleRightGunnerArm

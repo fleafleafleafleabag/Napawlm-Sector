@@ -1,0 +1,27 @@
+﻿- type: entity      
+  id: ActionToggleRightGunnerArm
+  name: Toggle Right Gunner Arm
+  description: Extend or retract the echis in your right arm.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: InstantAction
+    checkCanInteract: false
+    useDelay: 2
+    icon: { sprite: Objects/Weapons/Guns/Pistols/cobra.rsi, state: icon }
+    itemIconStyle: NoItem
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Items/unsheath.ogg
+    event: !type:ToggleMantisBladeEvent
+
+- type: entity
+  id: ActionToggleLeftGunnerArm
+  name: Toggle Left Gunner Arm
+  description: Extend or retract the cobra in your left arm.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: InstantAction
+    checkCanInteract: false
+    useDelay: 2
+    icon: { sprite: Objects/Weapons/Guns/Pistols/viper.rsi, state: icon }
+    itemIconStyle: NoItem
+    event: !type:ToggleMantisBladeEvent
