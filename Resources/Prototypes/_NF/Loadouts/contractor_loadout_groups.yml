@@ -954,13 +954,13 @@
   minLimit: 0
   maxLimit: 2
   loadouts:
-  - ContractorMedicalTrackingImplanter
+  # - ContractorMedicalTrackingImplanter
   - ContractorLightImplanter
   - ContractorBikeHornImplanter
   - ContractorSadTromboneImplanter
   - ContractorMimePowersImplanter
-  fallbacks:
-  - ContractorMedicalTrackingImplanter
+  # fallbacks:
+  # - ContractorMedicalTrackingImplanter
 
 - type: loadoutGroup
   id: ContractorBureaucracy
