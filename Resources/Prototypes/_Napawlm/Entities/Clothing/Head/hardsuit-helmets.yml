@@ -1,0 +1,13 @@
+- type: entity
+  parent: ClothingHeadHardsuitBase
+  id: ClothingHeadHelmetHardsuitBasicContractorChameleon
+  name: basic hardsuit helmet
+  description: A basic-looking hardsuit helmet that provides minor protection against most sources of damage.
+  components:
+  - type: ChameleonClothing
+    slot: [ outerClothing ]
+    default: ClothingOuterArmourInvisible
+  - type: UserInterface
+    interfaces:
+      enum.ChameleonUiKey.Key:
+        type: ChameleonBoundUserInterface

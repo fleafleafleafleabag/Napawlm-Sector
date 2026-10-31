@@ -1,0 +1,33 @@
+- type: entity
+  parent: ClothingOuterHardsuitBasicContractorChameleon
+  name: contractor hardsuit
+  description: bassic hardsuit for contractors, comes equipped with chameleon functionality and plenty of armor.
+  components:
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
+        Heat: 0.5
+        Radiation: 0.5
+        Caustic: 0.5
+        Shock: 0.5
+        Cold: 0.5 # dont ap me bitch i will kill you
+  - type: ToggleableClothing # Goobstation
+    requiredSlot: outerclothing
+    blockUnequipWhenAttached: false
+    replaceCurrentClothing: true
+    clothingPrototypes:
+      head: ClothingHeadHelmetHardsuitBasicContractorChameleon
+      helmetcover: ClothingHeadHelmetCoverBlock
+      helmetattachment: ClothingHeadHelmetAttachmentBlock
+  - type: ChameleonClothing
+    slot: [ outerClothing ]
+    default: ClothingOuterArmourInvisible
+  - type: UserInterface
+    interfaces:
+      enum.ChameleonUiKey.Key:
+        type: ChameleonBoundUserInterface
