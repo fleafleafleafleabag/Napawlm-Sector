@@ -9,4 +9,4 @@ syndicate-objective-trauma-leader-hardsuit-desc = The Director of care doesnt ne
 
 syndicate-objective-encryption-keys = Get some encryption keys.
 syndicate-objective-encryption-keys-desc = Go get their tongues and ears.
-syndicate-objective-encryption-keys-desc-mult = go get {$count} tongues and ears.
+syndicate-objective-encryption-keys-desc-mult = Actually, the tajaran community doesnt people doing jokes around "cat got your tongue?" unless they're tajaran too, just get {$count} encryption keys.
