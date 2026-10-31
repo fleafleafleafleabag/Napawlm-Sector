@@ -21,3 +21,16 @@
     Telecrystal: 15
   categories:
   - UplinkJob
+
+- type: listing
+  id: UplinkClothingOuterHardsuitBasicContractorChameleon
+  name: uplink-contract-hardsuit-name
+  description: uplink-contract-hardsuit-desc
+  icon:
+    sprite: Clothing/OuterClothing/Hardsuits/basic.rsi/
+    state: icon
+  productEntity: ClothingOuterHardsuitBasicContractorChameleon
+  cost:
+    Telecrystal: 50
+  categories:
+  - UplinkJob
