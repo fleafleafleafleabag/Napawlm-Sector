@@ -188,10 +188,10 @@
     relayOverlay: true
     goggleEffect: true
     action: ActionToggleNightVision
-    viewCircleRadius: 400
+    viewCircleRadius: 600 #Napawlm. :D
     viewCircleCount: 1
     viewCircleSpacing: 280
-    phosphorColor: "#00FF00"
+    phosphorColor: "#7FC756" #Napawlm, i hate that piss green
     lightingColor: "#FFFFFF32"
 
 - type: entity

@@ -21,38 +21,38 @@
       goggleEffect: true
       viewCircleRadius: 450
       viewCircleCount: 4
-      viewCircleSpacing: 280
+      viewCircleSpacing: 340
       action: ActionToggleNightVision
-      phosphorColor: "#00FF00"
+      phosphorColor: "#DE579A"
       lightingColor: "#FFFFFF32"
 
 - type: entity
   id: OrganAsakimHeart
   parent: [ OrganAnimalHeart ]
   name: asakim heart
-  description: A large heart, capable of metabolizing more chemicals at once.
-  components:
-  - type: Metabolizer
-    maxReagents: 5
-    metabolizerTypes: [ Animal ]
-    groups:
-    - id: Medicine
-    - id: Cryogenic # Frontier
-    - id: Poison
-    - id: Narcotic
+  description: A large heart, capable of metabolizing more love at once.
+  # components:
+  # - type: Metabolizer
+  #   maxReagents: 5
+  #   metabolizerTypes: [ Animal ]
+  #   groups:
+  #   - id: Medicine
+  #   - id: Cryogenic # Frontier
+  #   - id: Poison
+  #   - id: Narcotic
 
 - type: entity
   id: OrganAsakimLungs
   parent: [ OrganHumanLungs ]
   name: asakim lungs
-  description: Heavy, huge lungs, genetically engineered to assist in energizing the body's raw strength in melee.
-  components:
-  - type: Organ
-    onAdd:
-    - type: BonusMeleeDamage
-      damageModifierSet:
-        coefficients:
-          Blunt: 1.1
-          Slash: 1.1
-          Piercing: 1.1
-          Asphyxiation: 1
+  description: Heavy, huge lungs.
+  # components:
+  # - type: Organ
+  #   onAdd:
+  #   - type: BonusMeleeDamage
+  #     damageModifierSet:
+  #       coefficients:
+  #         Blunt: 0.8
+  #         Slash: 1.25
+  #         Piercing: 1.25
+  #         Asphyxiation: 1

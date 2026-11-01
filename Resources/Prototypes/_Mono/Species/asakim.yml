@@ -1,7 +1,7 @@
 - type: species
   id: Asakim
   name: species-name-asakim
-  roundStart: false # sad...
+  roundStart: true # sad... | Napawlm , steamhappy!
   prototype: MobAsakim
   sprites: MobAsakimSprites
   dollPrototype: MobAsakimDummy

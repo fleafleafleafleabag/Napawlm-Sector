@@ -59,13 +59,13 @@ public sealed partial class NightVisionComponent : Component
     /// This is the part responsible for making things bright.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public Color LightingColor = new(1f, 1f, 1f, 0.15f);
+    public Color LightingColor = new(1f, 1f, 1f, 0.12f);
 
     /// <summary>
     /// The color of the night vision phosphor that will be displayed as a monochromatic color to the user.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public Color PhosphorColor = new(0f, 1f, 0f, 1f);
+    public Color PhosphorColor = new( 0.498f, 1f, 0f, 0.337f);
 
     /// <summary>
     /// If the night vision circular goggle effect should be shown.
@@ -97,6 +97,6 @@ public sealed partial class NightVisionComponent : Component
     /// The amount of light multiplication the night vision system should apply.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float Amplification = 32f;
+    public float Amplification = 24f;
 }
 public sealed partial class ToggleNightVisionEvent : InstantActionEvent;
