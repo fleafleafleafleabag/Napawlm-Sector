@@ -1,0 +1,254 @@
+# you might be asking, why? why did i put everything in one file?
+# simple. im big.  and fat. simple as is, im tired of seeing the files splattered ALL over fucking folders
+# its like looking at mazes that have you doing cntrl+f at ANY time you see any ID or whatever that you havent seen yet
+# its TIRING!! annoying.
+# so, i decided to make EVERYTHING into a single file so that way i dont have to DEAL with allat
+# anyway, here comes hell:
+
+# ============================================================
+# DEPARTMENT
+# ============================================================
+
+- type: department
+  id: Syndicate
+  name: department-Syndicate
+  description: department-Syndicate-description
+  color: "#8B0000"
+  weight: 0
+  roles:
+  - SyndicateContractor
+  - SyndicateMarauder
+  - SyndicateCommander
+  primary: false
+  editorHidden: false
+
+# ============================================================
+# PLAY TIME TRACKERS
+# ============================================================
+
+- type: playTimeTracker
+  id: JobSyndicateContractor
+
+- type: playTimeTracker
+  id: JobSyndicateMarauder
+
+- type: playTimeTracker
+  id: JobSyndicateCommander
+
+# ============================================================
+# JOBS
+# ============================================================
+
+- type: job
+  id: SyndicateContractor
+  name: job-name-syndicate-contractor
+  description: job-description-syndicate-contractor
+  playTimeTracker: JobSyndicateContractor
+  icon: JobIconNukeops
+  supervisors: job-supervisors-syndicate
+  canBeAntag: false
+  hideConsoleVisibility: false
+  alwaysUseSpawner: true
+  weight: 10
+  startingGear: SyndicateContractorGear
+  access:
+  - Syndicate
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: SyndicateContractor
+    - type: NpcFactionMember
+      factions:
+      - Syndicate
+
+- type: job
+  id: SyndicateMarauder
+  name: job-name-syndicate-marauder
+  description: job-description-syndicate-marauder
+  playTimeTracker: JobSyndicateMarauder
+  icon: JobIconNukeops
+  supervisors: job-supervisors-syndicate
+  canBeAntag: false
+  hideConsoleVisibility: false
+  alwaysUseSpawner: true
+  weight: 20
+  startingGear: SyndicateMarauderGear
+  access:
+  - Syndicate
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - Syndicate
+
+- type: job
+  id: SyndicateCommander
+  name: job-name-syndicate-commander
+  description: job-description-syndicate-commander
+  playTimeTracker: JobSyndicateCommander
+  icon: JobIconNukeops
+  supervisors: job-supervisors-syndicate
+  canBeAntag: false
+  hideConsoleVisibility: false
+  alwaysUseSpawner: true
+  weight: 30
+  startingGear: SyndicateCommanderGear100TC
+  access:
+  - Syndicate
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - Syndicate
+
+# ============================================================
+# STARTING GEAR
+# ============================================================
+
+- type: startingGear
+  id: SyndicateContractorGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitOperative
+    back: ClothingBackpackDuffelSyndicate
+    mask: ClothingMaskGasSyndicate
+    eyes: ClothingEyesHudSyndicate
+    ears: ClothingHeadsetAltSyndicate
+    gloves: ClothingHandsGlovesCombat
+    shoes: ClothingShoesBootsCombatFilled
+    belt: ClothingBeltMilitaryWebbing
+    id: SyndiPDA
+    pocket1: BaseUplinkRadio50TC
+  storage:
+    back:
+    - BoxSurvivalMonoOxygenExtended
+    - PaperSyndicateContractBase
+    - PaperSyndicateContractBase
+    - PaperSyndicateContractBase
+    - DeathAcidifierImplanter
+
+- type: startingGear
+  id: SyndicateMarauderGear
+  parent: SyndicateOperativeGearFullNoUplink
+  equipment:
+    pocket1: WeaponPistolViper
+
+- type: startingGear
+  id: SyndicateCommanderGear100TC
+  parent: SyndicateCommanderGearFull
+  equipment:
+    pocket2: BaseUplinkRadio100TC
+
+# ============================================================
+# ROLE LOADOUTS
+# ============================================================
+
+- type: roleLoadout
+  id: JobSyndicateContractor
+  groups:
+  - SyndicateContractorJumpsuit
+  - SyndicateContractorBackpack
+  - SyndicateContractorHead
+  - ContractorBoxSurvival
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobSyndicateMarauder
+  groups:
+  - ContractorBoxSurvival
+
+- type: roleLoadout
+  id: JobSyndicateCommander
+  groups:
+  - ContractorBoxSurvival
+
+- type: loadoutGroup
+  id: SyndicateContractorHead
+  name: loadout-group-contractor-head
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - ContractorClothingHeadHatBlacksoft
+  - ContractorClothingHeadHatRedsoft
+  - ContractorClothingHeadBandBlack
+  - ContractorClothingHeadBandRed
+  - ContractorClothingHeadHatBeret
+
+# ============================================================
+# LOADOUT ITEMS
+# ============================================================
+
+- type: loadout
+  id: SyndicateJumpsuitOperative
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitOperative
+
+- type: loadout
+  id: SyndicateJumpskirtOperative
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtOperative
+
+- type: loadout
+  id: SyndicateBackpackDuffel
+  equipment:
+    back: ClothingBackpackDuffelSyndicate
+
+- type: loadout
+  id: SyndicateBackpackRegular
+  equipment:
+    back: ClothingBackpackSyndicate
+
+- type: loadout
+  id: SyndicateBackpackSatchel
+  equipment:
+    back: ClothingBackpackSatchelSyndicate
+
+# ============================================================
+# SPAWN POINTS
+# ============================================================
+
+- type: entity
+  id: SpawnPointSyndicateContractor
+  parent: SpawnPointJobBase
+  name: Syndicate Contractor
+  components:
+  - type: SpawnPoint
+    job_id: SyndicateContractor
+  - type: Sprite
+    sprite: Structures/Decoration/banner.rsi
+    state: banner-red
+
+- type: entity
+  id: SpawnPointSyndicateMarauder
+  parent: SpawnPointJobBase
+  name: Syndicate Marauder
+  components:
+  - type: SpawnPoint
+    job_id: SyndicateMarauder
+  - type: Sprite
+    sprite: Structures/Decoration/banner.rsi
+    state: banner-red
+
+- type: entity
+  id: SpawnPointSyndicateCommander
+  parent: SpawnPointJobBase
+  name: Syndicate Commander
+  components:
+  - type: SpawnPoint
+    job_id: SyndicateCommander
+  - type: Sprite
+    sprite: Structures/Decoration/banner.rsi
+    state: banner-red
+
+# ============================================================
+# JOB ICON
+# ============================================================
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNukeops
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: Syndicate
+  jobName: department-Syndicate

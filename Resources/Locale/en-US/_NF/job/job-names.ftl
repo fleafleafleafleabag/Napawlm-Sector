@@ -15,10 +15,10 @@ job-name-pirate-first-mate = PDV Asvaran
 job-name-pdv-denasvar = PDV Denasvar
 job-name-pdv-tarkhan = PDV Tarkhan
 job-name-tsf-marsoc = TSFMC MARSOC Operative
-job-name-security-guard = Judge
+job-name-security-guard = Sentinnel
 job-name-sheriff = TSFMC Colonel
-job-name-stc = Station Traffic Controller
-job-name-sr = Overseer
+job-name-stc = Overwatch
+job-name-sr = Watchhead
 job-name-pal = Public Affairs Liaison
 job-name-doc = Director of Care
 
@@ -34,8 +34,8 @@ JobPirate = PDV Rakhshan
 JobPirateCaptain = PDV Grand Vizier
 JobPirateFirstMate = PDV Asvaran
 JobPirateBoatswain = PDV Denasvar
-JobSecurityGuard = Judge
-JobSTC = Station Traffic Controller
+JobSecurityGuard = Sentinnel
+JobSTC = Overwatch
 
 # Upstream Removed
 job-name-senior-engineer = Senior Engineer

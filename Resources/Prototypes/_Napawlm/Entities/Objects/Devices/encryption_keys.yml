@@ -1,0 +1,53 @@
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeySentSec
+  name: Securtiy encryption key
+  description: An encryption key for the Watchdog department
+  components:
+  - type: EncryptionKey
+    channels:
+    - SentSec
+    defaultChannel: SentSec
+  - type: Item
+    sprite: Objects/Devices/encryption_keys.rsi
+  - type: Sprite
+    sprite: Objects/Devices/encryption_keys.rsi
+    layers:
+    - state: crypt_gray
+    - state: sec_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyPawCommand
+  name: Command encrytion key
+  description: An encryption key for the commanding heads of their department.
+  components:
+  - type: EncryptionKey
+    channels:
+    - PawCommand
+    defaultChannel: PawCommand
+  - type: Item
+    sprite: Objects/Devices/encryption_keys.rsi
+  - type: Sprite
+    sprite: Objects/Devices/encryption_keys.rsi
+    layers:
+    - state: crypt_gold
+    - state: hop_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeySyndicateAffairs
+  name: Syndicate Affairs encrytion key
+  description: An encryption key... for those who wear a void, not even hope.
+  components:
+  - type: EncryptionKey
+    channels:
+    - PawSyndieAffairs
+    defaultChannel: PawSyndieAffairs
+  - type: Item
+    sprite: Objects/Devices/encryption_keys.rsi
+  - type: Sprite
+    sprite: Objects/Devices/encryption_keys.rsi
+    layers:
+    - state: crypt_red
+    - state: hop_label

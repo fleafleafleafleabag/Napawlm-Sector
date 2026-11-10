@@ -125,7 +125,7 @@
 - type: entity
   name: paper
   parent: BasePaperSyndicateContract
-  id: PaperSyndicateContract
+  id: PaperSyndicateContractBase
   description: 'A piece of almost white paper.'
   components:
   - type: SyndicateContractorContract

@@ -30,8 +30,8 @@
 
 - type: company
   id: Colonial
-  name: Colonial Staff
-  color: "#279659"
+  name: WatchDog # Napawlm
+  color: "#d64f4f" # Napawlm
   disabled: true
 
 - type: company

@@ -19,5 +19,5 @@ job-description-public-affairs-liaison = Interface with the public, hand out and
 job-description-security-guard = "I am the law." Carry out the Overseer's bidding, bring order to chaos, and put down threats to the safety and security of the Sector.
 job-description-senior-officer = Teach new privates the basics of combat, and lead your TSFMC squads to victory against the Dynasty.
 job-description-sheriff = Manage your TSFMC detachment and keep them efficient, quell dissent, and keep the sector safe.
-job-description-stc = Expertly de-conflict the space around the station and help the Colonial Outpost issue fines for overdocked ships.
+job-description-stc = Expertly de-conflict the space around the station and handle prisioners brought by the sentinnels.
 job-description-sr = Spend all your station funds on military vessels. Control your security guards and attempt to serve justice in this sector.

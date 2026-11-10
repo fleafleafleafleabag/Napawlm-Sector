@@ -13,7 +13,7 @@
 - type: radioChannel
   id: Nfsd
   name: chat-radio-ncmc
-  keycode: 's'
+  keycode: 'b'
   frequency: 1023
   color: "#0c8ad3"
 

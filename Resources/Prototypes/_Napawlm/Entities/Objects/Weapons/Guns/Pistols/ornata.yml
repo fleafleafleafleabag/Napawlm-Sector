@@ -24,7 +24,7 @@
     selectedMode: Burst
     burstCooldown: 0.7
     burstFireRate: 8
-    shotsPerBurst: 2
+    shotsPerBurst: 3
     damageModifier: 1.7
     availableModes:
     - Burst

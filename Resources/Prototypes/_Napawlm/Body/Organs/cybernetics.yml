@@ -11,3 +11,15 @@
   - type: Organ
     onAdd:
     - type: BlackFlash
+
+- type: entity
+  parent: BaseCyberneticEyes
+  id: CyberEyeInterface
+  name: VAID-1 Eyes
+  description: A pair of cybernetic eyes that use virutal acess interfaces to station machinery. Allows bolting doors, toggling lights, and overloading powered equipment.
+  components:
+  - type: Organ
+    onAdd:
+    - type: FlashImmunity
+    - type: EyeProtection
+    - type: CyberEyeHack

@@ -21,12 +21,12 @@
   color: "#fcba03"
   longRange: true
 
-- type: radioChannel
-  id: CorticalBorer
-  name: chat-radio-cortical-borer
-  keycode: 'z'
-  color: "#d842fc"
-  longRange: true
+# - type: radioChannel
+#   id: CorticalBorer
+#   name: chat-radio-cortical-borer
+#   keycode: 'z'
+#   color: "#d842fc"
+#   longRange: true
 
 - type: radioChannel
   id: Remnants

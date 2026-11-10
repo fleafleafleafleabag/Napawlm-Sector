@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/14/2026 14:48:45
-  entityCount: 9636
+  entityCount: 9651
 maps:
 - 1
 grids:
@@ -52603,6 +52603,87 @@ entities:
     components:
     - type: Transform
       pos: -21.5,-0.5
+      parent: 2
+- proto: SpawnPointSyndicateCommander
+  entities:
+  - uid: 9637
+    components:
+    - type: Transform
+      pos: 14.5,5.5
+      parent: 2
+  - uid: 9638
+    components:
+    - type: Transform
+      pos: 17.5,5.5
+      parent: 2
+  - uid: 9639
+    components:
+    - type: Transform
+      pos: 17.5,11.5
+      parent: 2
+  - uid: 9640
+    components:
+    - type: Transform
+      pos: 14.5,11.5
+      parent: 2
+  - uid: 9641
+    components:
+    - type: Transform
+      pos: 11.5,11.5
+      parent: 2
+- proto: SpawnPointSyndicateContractor
+  entities:
+  - uid: 9642
+    components:
+    - type: Transform
+      pos: 14.5,5.5
+      parent: 2
+  - uid: 9643
+    components:
+    - type: Transform
+      pos: 17.5,5.5
+      parent: 2
+  - uid: 9644
+    components:
+    - type: Transform
+      pos: 17.5,11.5
+      parent: 2
+  - uid: 9645
+    components:
+    - type: Transform
+      pos: 14.5,11.5
+      parent: 2
+  - uid: 9646
+    components:
+    - type: Transform
+      pos: 11.5,11.5
+      parent: 2
+- proto: SpawnPointSyndicateMarauder
+  entities:
+  - uid: 9647
+    components:
+    - type: Transform
+      pos: 14.5,5.5
+      parent: 2
+  - uid: 9648
+    components:
+    - type: Transform
+      pos: 17.5,5.5
+      parent: 2
+  - uid: 9649
+    components:
+    - type: Transform
+      pos: 17.5,11.5
+      parent: 2
+  - uid: 9650
+    components:
+    - type: Transform
+      pos: 14.5,11.5
+      parent: 2
+  - uid: 9651
+    components:
+    - type: Transform
+      pos: 11.5,11.5
       parent: 2
 - proto: Spoon
   entities:

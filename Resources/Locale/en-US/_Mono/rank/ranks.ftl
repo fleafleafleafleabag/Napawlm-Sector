@@ -86,8 +86,8 @@ mmc-asset-security-senior = Senior Asset Security
 mmc-liason = Corporate Liason
 
 ### CC/MD ranks
-cc-judge = Jdg.
-cc-stc = STC
-cc-overseer = Overseer
+cc-judge = Stn.
+cc-stc = Overwatch
+cc-overseer = Watchhead
 md-doc = Director Of Care
 md-medic = ER.

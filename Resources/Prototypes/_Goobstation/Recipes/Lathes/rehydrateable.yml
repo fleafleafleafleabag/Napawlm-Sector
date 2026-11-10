@@ -156,7 +156,6 @@
   completetime: 30
   materials:
     Biomass: 80
-    Plasma: 250
 
 - type: latheRecipe
   id: ProtogenCube
@@ -183,3 +182,11 @@
   materials:
     Biomass: 70
     Plasma: 250
+
+- type: latheRecipe
+  id: AsakimCube
+  result: AsakimCube
+  completetime: 120
+  materials:
+    Biomass: 130
+    Plasma: 25000

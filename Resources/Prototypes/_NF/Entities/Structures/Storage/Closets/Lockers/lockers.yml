@@ -192,7 +192,7 @@
 # SR
 - type: entity
   id: LockerStationRepresentative
-  parent: [BaseStructureIndestructible, BaseStructureLockImmuneToEmag, BaseStructureAccessReaderImmuneToEmag, NFLockerBaseSecure, LockerHeadOfPersonnel]
+  parent: [BaseStructureIndestructible, NFLockerBaseSecure, LockerHeadOfPersonnel] # Napawlm | BaseStructureLockImmuneToEmag, BaseStructureAccessReaderImmuneToEmag removed :D
   name: overseer's locker
   components:
   - type: EntityStorageVisuals

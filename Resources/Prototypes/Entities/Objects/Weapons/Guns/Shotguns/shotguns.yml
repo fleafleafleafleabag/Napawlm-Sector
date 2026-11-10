@@ -120,7 +120,7 @@
   - type: AmmoCounter
   - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
   - type: Gun
-    fireRate: 4 # Mono
+    fireRate: 2.5 # Mono
     damageModifier: 1.1 # Mono - More powerful than enforcer yes, but this is a T2
     selectedMode: FullAuto
     availableModes:

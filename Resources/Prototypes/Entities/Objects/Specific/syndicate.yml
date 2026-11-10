@@ -90,6 +90,23 @@
     balance:
       Telecrystal: 125
 
+- type: entity
+  parent: BaseUplinkRadio
+  id: BaseUplinkRadio50TC # Napawlm :D
+  suffix: 50 TC
+  components:
+  - type: Store
+    balance:
+      Telecrystal: 50
+- type: entity
+  parent: BaseUplinkRadio
+  id: BaseUplinkRadio25TC # Napawlm :P
+  suffix: 25 TC
+  components:
+  - type: Store
+    balance:
+      Telecrystal: 25
+
 #this uplink MUST be used for nukeops, as it has the tag for filtering the listing.
 - type: entity
   parent: BaseUplinkRadio

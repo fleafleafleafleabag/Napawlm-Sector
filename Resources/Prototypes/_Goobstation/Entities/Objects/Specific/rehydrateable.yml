@@ -168,3 +168,13 @@
   - type: Rehydratable
     possibleSpawns:
     - MobFeroxiRandom
+
+- type: entity
+  parent: MonkeyCube
+  id: AsakimCube
+  name: asakim cube
+  description: Add water to get your own Asakim, bio-engineered just for war and ready to rumble, doesn't come with basic language models and instead just speaks draconic.
+  components:
+  - type: Rehydratable
+    possibleSpawns:
+    - MobAsakimRandom

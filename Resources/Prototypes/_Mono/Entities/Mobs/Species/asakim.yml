@@ -19,7 +19,7 @@
     baseSprintSpeed : 4.65
     weightlessAcceleration: 1.5 # Slightly more manueverable in space.
   - type: ClothingSlowResistance
-    modifier: -0.8 # Slowed down by clothing a LOT more.
+    modifier: 0.8 # Slowed down by clothing a bit less.
   - type: Fixtures
     fixtures: # TODO: This needs a second fixture just for mob collisions.
       fix1:
@@ -77,22 +77,22 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 3
+        Slash: 6
   - type: SolutionContainerManager
     solutions:
       melee:
         reagents:
         - ReagentId: GastroToxin
-          Quantity: 20
+          Quantity: 30
   - type: SolutionRegeneration
     solution: melee
     generated:
       reagents:
       - ReagentId: GastroToxin
-        Quantity: 20
+        Quantity: 30
   - type: MeleeChemicalInjector
     solution: melee
-    transferAmount: 2
+    transferAmount: 4
   - type: Temperature
     heatDamageThreshold: 400
     coldDamageThreshold: 285
@@ -112,7 +112,7 @@
   - type: Wagging
   - type: NpcFactionMember
     factions:
-    - Nanotrasen # Making new AI factions is annoying with all the hostilities I have to add, whatever. | Napawln, sorry bud, we're using that one... :d
+    - Syndicate # Making new AI factions is annoying with all the hostilities I have to add, whatever. | Napawln, sorry bud, we're using that one... :d | oops well i dont think we're gonna be reverting that no mo
   - type: Inventory
     speciesId: asakim
     # WWDP-Edit-Start
@@ -210,7 +210,7 @@
     Radiation: 1.3
     Poison: 0.4
     Piercing: 0.8
-    Slash: 1.3
-    Blunt: 1.3
+    Slash: 0.8
+    Blunt: 0.8
     Heat: 1.2
     Shock: 1.1
