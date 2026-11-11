@@ -210,7 +210,7 @@ public abstract partial class SharedDoAfterSystem : EntitySystem
         {
             var delayMultiplierEv = new GetDoAfterDelayMultiplierEvent();
             RaiseLocalEvent(args.User, delayMultiplierEv);
-            args.Delay *= delayMultiplierEv.Multiplier * 0.4f; //nether edit
+            args.Delay *= delayMultiplierEv.Multiplier;
         }
         // Goobstation end
 

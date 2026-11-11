@@ -244,13 +244,13 @@
   name: uplink-flash-grenade-name
   description: uplink-flash-grenade-desc
   productEntity: GrenadeFlashBang
-#  cost: # Pawlm
-#    Telecrystal: 5 # Pawlm
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 1 # Mono
+  cost:
+    Telecrystal: 3 # Mono
   categories:
   - UplinkExplosives
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 3
 
 - type: listing
   id: UplinkSmokeGrenade
@@ -756,9 +756,9 @@
   productEntity: HypoDartBox
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 5 # Mono
-  cost:
     Telecrystal: 10 # Mono
+  cost:
+    Telecrystal: 20 # Mono
   categories:
   - UplinkChemicals
 
@@ -973,7 +973,7 @@
   description: uplink-cyberpen-desc
   productEntity: CyberPen
   cost:
-    Telecrystal: 5 # Mono # Frontier: 1<8 - Mono Revert
+    Telecrystal: 3 # Mono # Frontier: 1<8 - Mono Revert
   categories:
   - UplinkDeception
 
@@ -1077,7 +1077,7 @@
   discountDownTo:
     Telecrystal: 15 # Mono
   cost:
-    Telecrystal: 25 # Pawlm
+    Telecrystal: 30 # Pawlm
   categories:
   - UplinkDisruption
 
@@ -1090,7 +1090,7 @@
   discountDownTo:
     Telecrystal: 10 # Mono
   cost:
-    Telecrystal: 15 # Mono
+    Telecrystal: 25 # Mono
   categories:
   - UplinkDisruption
 
@@ -1126,8 +1126,8 @@
   name: uplink-soap-name
   description: uplink-soap-desc
   productEntity: SoapSyndie
-#  cost:
-#    Telecrystal: 5 # Mono
+  cost:
+    Telecrystal: 2 # Mono
   categories:
   - UplinkDisruption
 
@@ -1140,7 +1140,7 @@
   discountDownTo:
     Telecrystal: 1 # Pawlm
   cost:
-    Telecrystal: 2 # Pawlm
+    Telecrystal: 3 # Pawlm
   categories:
   - UplinkDisruption
 
@@ -1151,9 +1151,9 @@
   productEntity: ToolboxSyndicateFilled
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 5 # Mono
+    Telecrystal: 3 # Mono
   cost:
-    Telecrystal: 10 # Mono
+    Telecrystal: 7 # Mono
   categories:
   - UplinkDisruption
 
@@ -1164,9 +1164,9 @@
   productEntity: SyndicateJawsOfLife
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 1 # Pawlm
-  cost:
     Telecrystal: 5 # Pawlm
+  cost:
+    Telecrystal: 10 # Pawlm
   categories:
   - UplinkDisruption
 
