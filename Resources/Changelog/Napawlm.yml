@@ -1,0 +1,72 @@
+﻿Entries:
+- author: fleax4bag
+  changes:
+  - message: Lot of unchangelog'd changes, Replaced Nethermore changelog section with Napawlm section. all changes above are the stuff that was changed en-masse before 11/11/26.
+    type: Fix
+  id: 1
+- author: fleax4bag
+  changes:
+  - message: All ballistic weapon projectile damage has been slashed by 50%, yeeoouuch
+    type: Tweak
+  - message: Bulldog was nerfed, has 2.5 firerate instead of 4
+    type: Tweak
+  - message: Hristov was nerfed. given a 1 second wield delay, and use delay, its damage has been lowered from 200 to 130, not 100 because its not a projectlile.
+    type: Tweak
+  - message: 4.6x30mm pistol magazine ammo size nerfed
+    type: Tweak
+  - message: The Ornata was added, the weapon requires dual wielding to fire in the first place, you can buy it in the syndicate uplink for around 60 TC
+    type: Add
+  - message: The indeterminate bundle crate was added. gives 3* random bundles, ready to test your luck? you can buy it in the syndicate uplink for 150 TC.
+    type: Add
+  - message: The indeterminate bundle crate only gives 2 bundles now :(
+    type: Tweak
+  - message: The sandevistan is no longer completely bugged and unusable
+    type: Fix
+  - message: Syndicate uplink prices have been changed to align with new balance changes
+    type: Tweak
+  - message: The Syndicate Marauder, Contractor, and Commander jobs have been added.
+    type: Add
+  - message: Colonnial security has been revamped; Watchhead as overseer, Overwatch as STC, and Sentinnel as Judge (or alternatively guard, or security officer.)
+    type: Tweak
+  - message: The Syndicate Contractor System has been added, sign a contract to become a contractee, complete your objectives and the contractor and you get your rewards! :D
+    type: Add
+  - message: The Contraband poster objective has been added, put up posters anywhere, piss the off the sentinnels!!
+    type: Add
+  - message: Added a few misc steal objectives for the contractor, theyre WIP at the moment, please rework later D:
+    type: Add
+  - message: Asakim have been buffed, they dont come with their old language, but theyre a lot stronger
+    type: Tweak
+  - message: Asakim cubes can now be made at a emagged biocube / biogenerator lathe
+    type: Add
+  - message: Holoparasites are no longer recalled when they're too far, instead they are just soft-capped to their distance, which was also buffed from 5 tiles to 7.
+    type: Tweak
+  - message: Holoparasites now ignore around 50% of armor on hit.
+    type: Tweak
+  - message: Sandevistan change reverted, its now on its old system, but fixed, it now properly reloads, also has been balanced a bunch to be slightly stronger at the cost of dealing more damage
+    type: Fix
+  - message: Reverted Nethermore change where doafters were 60% faster, Hashtag KillCoolfied
+    type: Tweak
+  - message: Buffed D.E.X hands (20% reduction => 50% reduction)
+    type: Tweak
+  - message: Cyborgs can be emagged again.
+    type: Add
+  - message: Medical tracker implant was removed from roundstart inventories.
+    type: Remove
+  - message: Night vision goggles were made less green in most basic hardsuits and their base component
+    type: Tweak
+  - message: You can dual wield most weapons now, get any gun that doesnt require wielding in both hands, and both guns will shoot.
+    type: Add
+  - message: Added the mind control implant, implant it on someone and they're your familiar :D
+    type: Add
+  - message: Added the nutrient pump implant, i'll let you guess what it does :P
+    type: Add
+  - message: Cyborgs can be emagged again.
+    type: Tweak
+  - message: Added the "Does a flip!" emote and the "Blink" emote! flip all you want!!!
+    type: Added
+  id: 2
+- author: fleax4bag
+  changes:
+  - message: Lot of unchangelog'd changes, Replaced Nethermore changelog section with Napawlm section. all changes below are the stuff that was changed en-masse before 11/11/26.
+    type: Fix
+  id: 3

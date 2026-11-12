@@ -88,7 +88,7 @@
         rolls: !type:RangeNumberSelector
           range: 2, 2
           # for some reason, the selector here adds 1 to whatever value it generates,
-          # so this is actually 3? what!??!?!?!?!?
+          # so this is actually 2? what!??!?!?!?!?
   - type: StaticPrice
     price: 69
 

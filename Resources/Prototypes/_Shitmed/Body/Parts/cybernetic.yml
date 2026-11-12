@@ -164,7 +164,7 @@
   description: A cybernetic left hand that allows its wearer to interact faster.
   components:
   - type: DoAfterDelayMultiplier
-    multiplier: 0.8
+    multiplier: 0.5
 
 - type: entity
   id: DexRightHand
@@ -173,4 +173,4 @@
   description: A cybernetic right hand that allows its wearer to interact faster.
   components:
   - type: DoAfterDelayMultiplier
-    multiplier: 0.8
+    multiplier: 0.5
